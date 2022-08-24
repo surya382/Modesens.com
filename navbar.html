@@ -6,23 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style> 
-    body{
-        background: black;
-        color: white;
-    }
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+        }
+        .right_top{
+            display: flex;
+        }
+        .right_top img{
+            width:8%;
+            height:50%;
+            display: inline-block;
+            border:3px solid blue;
+            margin-left: 20%;
+            margin-top: 3%;
+        }
+        .user img{
+            width:100%;
+            border:3px solid red;
+            margin-left: 110%;
+            margin-top:34%;
+        }
         #navbar ul>li {
             display: inline-block;
             margin: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
         }
         a{
             text-decoration: none;
-            color:white;
+            color: black;
         }
         #navbar>img{
             width:10%;
         }
         .menu ul li{
-            width:150px;
             margin:5px;
             padding:15px;
         }
@@ -34,7 +52,7 @@
             display: none;
         }
         .menu ul li:hover{
-            background: grey;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         .menu ul li:hover .sub-menu1 {
             display:block;
@@ -44,14 +62,12 @@
             display: block;
             margin:5px;
         }
-        .menu ul li:hover .sub-menu1 ul li{
+        .menu ul li:hover .sub-menu1 ul li { 
             width:150px;
-            padding:5px;
-            border-bottom: 1px dotted white;
-            background: grey;
-            /* background:transparent; */
+            padding-top:3%;
+            border-bottom: 1px dotted grey;
             border-radius: 5px;
-            text-align: left;
+            text-align: center;
         }
         .menu ul li:hover .sub-menu1 ul li:last-child{
             border-bottom: none;
@@ -63,7 +79,7 @@
         .hoverSub:hover .sub-menu2{
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            background: green;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
         .hoverSub:hover .sub-menu2>.flexSub>ul{
             display:grid;
@@ -71,10 +87,21 @@
         .hoverSub:hover .sub-menu2>.flexSub{
            padding:2%;
         }
+        #lister{
+            margin-top: 50%;
+            
+        }
+        #list *{
+            width:100%;
+            font-weight: bold;
+            font-size: 17px;
+            padding-top: 5%;
+        }
     </style>
 </head>
 <body>
     <div id="navbar">
+        <img src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg" alt="">
         <div class="menu">
             <ul>
                 <li class="active"> <a href="#">WOMEN</a>
@@ -227,11 +254,140 @@
                     <div class="sub-menu1">
                         <ul>
                             <li><a href="#">Shop All</a></li>
-                            <li><a href="#">Clothing</a></li>
-                            <li><a href="#">Bags</a></li>
-                            <li><a href="#">Shoes</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Grooming</a></li>
+                            <li class="hoverSub"><a href="#">Clothing</a>
+                                <div class="sub-menu2">
+                                    <div class="flexSub">
+                                        <h5>Shop By Category</h5>
+                                    <ul>
+                                        <li><a href="#">NEW ARRIVALS</a></li>
+                                        <li><a href="#">ALL CLOTHING</a></li>
+                                        <li><a href="#">BEACH WEAR</a></li>
+                                        <li><a href="#">DRESSES</a></li>
+                                        <li><a href="#">TOPS</a></li>
+                                        <li><a href="#">SHORTS</a></li>
+                                        <li><a href="#">JEANS</a></li>
+                                        <li><a href="#">PANTS</a></li>
+                                    </ul>
+                                    </div>
+                                    <div class="flexSub">
+                                        <h5>Shop By List</h5>
+                                    <ul>
+                                        <li><a href="#">LUXURY T-SHIRTS</a></li>
+                                        <li><a href="#">TOP TANK TOPS</a></li>
+                                        <li><a href="#">BUTTON DOWN'S</a></li>
+                                        <li><a href="#">SHORT SHORT'S</a></li>
+                                        <li><a href="#">DENIM DAZE</a></li>
+                                        <li><a href="#">FEELING TRANSPARENT</a></li>
+                                        <li><a href="#">VESTED INTEREST</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hoverSub"><a href="#">Bags</a>
+                                <div class="sub-menu2">
+                                    <div class="flexSub">
+                                        <h5>Shop By Category</h5>
+                                    <ul>
+                                        <li><a href="#">NEW ARRIVALS</a></li>
+                                        <li><a href="#">ALL BAGS</a></li>
+                                        <li><a href="#">BAG PACKS</a></li>
+                                        <li><a href="#">TRAVEL BAGS</a></li>
+                                        <li><a href="#">SATCHERS</a></li>
+                                        <li><a href="#">TOTES</a></li>
+                                        <li><a href="#">CROSS BODY BAGS</a></li>
+                                        <li><a href="#">SHOULDER BAGS</a></li>
+                                    </ul>
+                                    </div>
+                                    <div class="flexSub">
+                                        <h5>Shop By List</h5>
+                                    <ul>
+                                        <li><a href="#">COOL BACKPACKS</a></li>
+                                        <li><a href="#">CRISP WHITE BAGS</a></li>
+                                        <li><a href="#">HANDS FREE</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hoverSub"><a href="#">Shoes</a>
+                                <div class="sub-menu2">
+                                    <div class="flexSub">
+                                        <h5>Shop By Category</h5>
+                                    <ul>
+                                        <li><a href="#">NEW ARRIVALS</a></li>
+                                        <li><a href="#">ALL SHOES</a></li>
+                                        <li><a href="#">BOOTS</a></li>
+                                        <li><a href="#">BROGUES</a></li>
+                                        <li><a href="#">OXFORD</a></li>
+                                        <li><a href="#">SANDALS</a></li>
+                                        <li><a href="#">SLIPPERS</a></li>
+                                        <li><a href="#">LOAFERS</a></li>
+                                    </ul>
+                                    </div>
+                                    <div class="flexSub">
+                                        <h5>Shop By List</h5>
+                                    <ul>
+                                        <li><a href="#">SUN'S OUT, TOE'S OUT</a></li>
+                                        <li><a href="#">SLEEK SANDALS</a></li>
+                                        <li><a href="#">MEN'S DRESS SHOES</a></li>
+                                        <li><a href="#">SPRING SANDALS STAPLE</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hoverSub"><a href="#">Accessories</a>
+                                <div class="sub-menu2">
+                                    <div class="flexSub">
+                                        <h5>Shop By Category</h5>
+                                    <ul>
+                                        <li><a href="#">NEW ARRIVALS</a></li>
+                                        <li><a href="#">ALL ACCESSORIES</a></li>
+                                        <li><a href="#">JEWELRY</a></li>
+                                        <li><a href="#">WATCHES</a></li>
+                                        <li><a href="#">SUNGLASSES</a></li>
+                                        <li><a href="#">OPTICALS</a></li>
+                                        <li><a href="#">HATS</a></li>
+                                        <li><a href="#">BELTS</a></li>
+                                    </ul>
+                                    </div>
+                                    <div class="flexSub">
+                                        <h5>Shop By List</h5>
+                                    <ul>
+                                        <li><a href="#">SPRING ACCESSORIES</a></li>
+                                        <li><a href="#">CAUGHT FOR EYE</a></li>
+                                        <li><a href="#">MUST HAVE ACCESSORIES</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hoverSub"><a href="#">Grooming</a>
+                                <div class="sub-menu2">
+                                    <div class="flexSub">
+                                        <h5>Shop By Category</h5>
+                                    <ul>
+                                        <li><a href="#">NEW ARRIVALS</a></li>
+                                        <li><a href="#">ALL GROOMING</a></li>
+                                        <li><a href="#">BATH & BODY</a></li>
+                                        <li><a href="#">SHAVE</a></li>
+                                        <li><a href="#">SKIN CARE</a></li>
+                                        <li><a href="#">FRAGRANCE</a></li>
+                                        <li><a href="#">HAIRCARE</a></li>
+                                        <li><a href="#">SUNCARE</a></li>
+                                    </ul>
+                                    </div>
+                                    <div class="flexSub">
+                                        <h5>Shop By DESIGNERS</h5>
+                                    <ul>
+                                        <li><a href="#">GUCCI</a></li>
+                                        <li><a href="#">DOLCE & GABBANA</a></li>
+                                        <li><a href="#">AESOP</a></li>
+                                        <li><a href="#">LANVIN</a></li>
+                                        <li><a href="#">SAINT LAURENT</a></li>
+                                        <li><a href="#">FENDI</a></li>
+                                        <li><a href="#">LOEWE</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </li>
                             <li><a href="#">Sale</a></li>
                             <li><a href="#">Pre-Owned</a></li>
                             <li><a href="#">Occassion</a></li>
@@ -287,7 +443,33 @@
                 </li>
             </ul>
         </div>
+        <div class="right_top">
+            <img src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg" alt="">
+            <div class="user hoverSub">
+                <img  src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt="">
+                <div class="sub-menu2">
+                    <div class="flexSub" id="lister">
+                    <ul id="list">
+                        <li><a href="#">SIGN UP</a></li>
+                        <li><a href="#">MY LIKES</a></li>
+                        <li><a href="#">MY ALERTS</a></li>
+                        <li><a href="#">MY CLOSET</a></li>
+                        <li><a href="#">MY ORDER</a></li>
+                        <li><a href="#">MY LOYALTY</a></li>
+                        <li><a href="#">MY MESSAGES</a></li>
+                        <li><a href="#">INVITE FRIENDS</a></li>
+                        <li><a href="#">SETTINGS</a></li>
+                        <li><a href="#">LOGIN</a></li>
+                    </ul>
+                    </div>
+               <input type="text" name="" class="inpHover">
+                </div>
+            </div>
+            <img src="https://img.icons8.com/ios-glyphs/452/search--v1.png" alt="">
+            
+        </div>
     </div>
+
    
 </body>
 </html>
