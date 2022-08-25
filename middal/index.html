@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="nav.css">
+    <!-- <link rel="stylesheet" href="nav.css"> -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../style/navbar.css">
     <script src="https://kit.fontawesome.com/19c875d921.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,9 +19,8 @@
         <img id="image"
             src="https://modesens.com/banner/11843/getimg/?img=%2Fbanner%2F20220803-modesens-Sale-1140x400-EN.jpg"
             alt="error">
-        <button id="left">
-            < </button>
-                <button id="right">></button>
+        <button id="left"> < </button>
+        <button id="right">></button>
     </div>
     <div id="text">
         <h2>Featured Partners</h2>
@@ -90,7 +91,7 @@
     </div>
     <div id="last"> </div>
     <button id="btn5">VIEW ALL</button>
-    <div id="footer">
+    <div id="bott">
         <div id="inside">
             <h2>Download the</h2>
             <h2>ModeSens App</h2><br>
@@ -110,12 +111,17 @@
     </div>
     <p>When you follow our links to visit a brand or retailer’s website or make a purchase, ModeSens may earn a
         commission.</p>
+        <div id="bottom"></div>
 </body>
 
 </html>
 <script type="module">
-    import navbar from "./navbar.js";
+    import navbar from "../components/navbar.js";
 
     document.getElementById("navbar").innerHTML = navbar();
+
+    import footer from "../Footer/footer.js";
+    let container = document.getElementById('bottom');
+    container.innerHTML = footer;
 </script>
 <script src="index.js"></script>

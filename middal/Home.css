@@ -21,7 +21,7 @@ div {
     cursor: pointer;
 }
 
-img {
+div>img {
     width: 100%;
 }
 
@@ -241,7 +241,7 @@ h4 {
     font-size: 25px;
     z-index: 1;
 }
-#footer {
+#bott {
     width: 100vw;
     background-color: #F8F7F6;
     display: flex;
