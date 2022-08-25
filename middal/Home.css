@@ -3,9 +3,9 @@
     padding: 0px;
 }
 
-div {
+#top-portion {
     margin: 20px auto;
-    width: 90vw;
+    /* width: 90vw; */
     position: relative;
 }
 
@@ -21,7 +21,7 @@ div {
     cursor: pointer;
 }
 
-div>img {
+#top-portion>img {
     width: 100%;
 }
 
@@ -54,11 +54,15 @@ h3 {
     /* margin: 20px auto; */
     width: 80vw;
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(6, 1fr);
-    gap: 0px 40px;
+    gap:15px;
 }
 
 #slide>div {
+    width: 100%;
+}
+#slide > div > img {
     width: 100%;
 }
 
@@ -67,11 +71,12 @@ h3 {
 }
 
 #big {
-    width: 90vw;
+    width: 85vw;
     margin-top: 40px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
 
 }
 
@@ -128,7 +133,8 @@ h3 {
     cursor: pointer;
 }
 
-h2 {
+#name {
+    margin: auto 50px;
     text-align: center;
     margin-top: 50px;
 }
