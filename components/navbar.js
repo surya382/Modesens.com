@@ -370,4 +370,4 @@ function navbar(){
     </div>`
 }
 
-export default navbar
+export default navbar;
