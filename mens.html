@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
-    <link rel="stylesheet" href="first.css">
+    <title>mens</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="https://kit.fontawesome.com/19c875d921.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div>
+    <div id="navbar"></div>
+    <div id="top-portion">
         <img id="image"
-            src="https://modesens.com/banner/13212/getimg/?img=%2Fbanner%2F20220824-modesens-LordTaylor-1140x400-EN.jpg"
+            src="https://modesens.com/banner/13120/getimg/?img=%2Fbanner%2F20220816-modesens-everydaystyle-1140x400-M.jpg"
             alt="error">
-        <button id="left">< </button>
+        <button id="left">
+            < </button>
                 <button id="right">></button>
     </div>
     <div id="text">
@@ -61,17 +64,34 @@
         </div>
     </div>
     <div id="line">
+        <div id="b">
+            <div id="b1"></div>
         <h2>Special Offers</h2>
+        <div id="b2"></div>
+        </div>
     </div>
     <div id="big">
     </div>
     <button id="btn1">VIEW MORE</button>
+    <div id="b">
+        <div id="b1"></div>
     <h2>Trending Now</h2>
+    <div id="b2"></div>
+    </div>
     <div id="box">
     </div>
     <button id="btn2">SHOW MORE</button>
+    <div id="b">
+    <div id="b1"></div>
     <h2>Community Posts</h2>
-    <div id="last"> </div>
+    <div id="b2"></div>
+</div>
+    <div id="post">
+        <img src="https://cdn.modesens.com/umedia/1625472s?w=400&">
+        <img src="https://cdn.modesens.com/umedia/1587542s?w=400&">
+        <img src="https://cdn.modesens.com/umedia/1593167s?w=400&">
+        <img src="https://cdn.modesens.com/umedia/14180s?w=400&">
+    </div>
     <button id="btn5">VIEW ALL</button>
     <div id="footer">
         <div id="inside">
@@ -91,8 +111,14 @@
             <img src="https://cdn.modesens.com/static/img/20211109downloadright.png">
         </div>
     </div>
-    <p>When you follow our links to visit a brand or retailer’s website or make a purchase, ModeSens may earn a commission.</p>
+    <p>When you follow our links to visit a brand or retailer’s website or make a purchase, ModeSens may earn a
+        commission.</p>
 </body>
 
 </html>
-<script src="first.js"></script>
+<script type="module">
+    import navbar from "./navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+</script>
+<script src="index.js"></script>

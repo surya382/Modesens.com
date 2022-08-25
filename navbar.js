@@ -1,83 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style> 
-    body{
-        background: black;
-        color: white;
-    }
-        #navbar ul>li {
-            display: inline-block;
-            margin: auto;
-        }
-        a{
-            text-decoration: none;
-            color:white;
-        }
-        #navbar>img{
-            width:10%;
-        }
-        .menu ul li{
-            width:150px;
-            margin:5px;
-            padding:15px;
-        }
-        .hoverSub{
-            display: flex;
-        }
-   
-        .sub-menu1,.sub-menu2{
-            display: none;
-        }
-        .menu ul li:hover{
-            background: grey;
-        }
-        .menu ul li:hover .sub-menu1 {
-            display:block;
-            position:absolute;
-        }
-        .menu ul li:hover .sub-menu1 ul {
-            display: block;
-            margin:5px;
-        }
-        .menu ul li:hover .sub-menu1 ul li{
-            width:150px;
-            padding:5px;
-            border-bottom: 1px dotted white;
-            background: grey;
-            /* background:transparent; */
-            border-radius: 5px;
-            text-align: left;
-        }
-        .menu ul li:hover .sub-menu1 ul li:last-child{
-            border-bottom: none;
-        }
-        .hoverSub:hover .sub-menu2{
-        display: block;
-        position: absolute;
-        }
-        .hoverSub:hover .sub-menu2{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            background: green;
-        }
-        .hoverSub:hover .sub-menu2>.flexSub>ul{
-            display:grid;
-        }
-        .hoverSub:hover .sub-menu2>.flexSub{
-           padding:2%;
-        }
-    </style>
-</head>
-<body>
-    <div id="navbar">
-        <div class="menu">
+
+   function navbar(){
+
+
+      return  `<div class="menu">
+     
             <ul>
-                <li class="active"> <a href="#">WOMEN</a>
+            <img src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg">
+                <li class="active"> <a href="index.html">WOMEN</a>
                     <div class="sub-menu1">
                         <ul>
                             <li><a href="#">Shop All</a></li>
@@ -223,7 +152,7 @@
                         </ul>
                     </div>
                 </li>
-                <li> <a href="#">MEN</a>
+                <li> <a href="mens.html">MEN</a>
                     <div class="sub-menu1">
                         <ul>
                             <li><a href="#">Shop All</a></li>
@@ -286,14 +215,10 @@
                     </div>
                 </li>
             </ul>
-        </div>
-    </div>
-   
-</body>
-</html>
-
-<script type="module" src="navbar.js">
+        </div>`
+    
+   }
 
 
 
-</script>
+   export default navbar;

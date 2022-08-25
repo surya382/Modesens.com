@@ -287,3 +287,27 @@ p {
    text-align: center;
    font-size: 18px;
 }
+#post {
+    width: 80vw;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#post > img {
+    width: 210px;
+    height: 45vh;
+}
+#b {
+    display: flex;
+    width: 84vw;
+    text-align: center;
+}
+#b1 {
+    width:34vw;
+    border-bottom: 1px rgb(146, 134, 134) solid;
+}
+#b2 {
+    width:34vw;
+    border-bottom: 1px rgb(146, 134, 134) solid;
+}
