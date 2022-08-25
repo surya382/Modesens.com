@@ -75,4 +75,4 @@ function footer() {
 </div>`;
 }
 
-export default footer();
+export default footer

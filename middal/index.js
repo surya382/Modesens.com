@@ -87,11 +87,9 @@ function Toggle( x) {
 
     if (x == 0) {
         document.getElementById("btn3").style.color = "red";
-    } else if (x == 1) {
-        document.getElementById("btn3").style.color = "red"
-    }
+    } 
     else {
-        document.getElementById("btn3").style.color = "red";
+        document.getElementById("btn3").style.color = "grey";
     }
 }
 
@@ -196,13 +194,9 @@ appendLast = (data) => {
     })
 }
 
-//let btnbt=document.getElementById("btn6");
-//let count=0;
-//let arr=[];
+
 function Toggle2(x) {
     
-    //console.log(x)
-   // if(count==1)
     if (x==0) {
         document.getElementById("btn6").style.color = "red";
     } else {
