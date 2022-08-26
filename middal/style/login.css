@@ -19,9 +19,8 @@
 
 #text{
     /* border: 1px solid black; */
-    margin-top: 7em;
+    margin-top: 10em;
     padding-left: 20px;
-    
 }
 #text>h2{
  margin-top: 1em;
@@ -41,7 +40,7 @@
     position: relative;
     margin: 6% auto;
     /* margin-left: 40em; */
-    background-color: transparent;
+    background-color: #fff;
     padding: 5px;
     overflow: hidden;
     border-radius: 1em;
@@ -141,12 +140,3 @@ span {
 #register {
     left: 450px;
 }
-#chickbox{
-    color: white;
-    
-}
-
-::placeholder { 
-    color: white;
-    opacity: 1; 
-  }

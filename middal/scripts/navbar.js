@@ -148,10 +148,10 @@ function navbar(){
                     </ul>
                 </div>
             </li>
-            <li> <a href="#">MEN</a>
+            <li> <a href="menspage.html">MEN</a>
                 <div class="sub-menu1">
                     <ul>
-                        <li><a href="#">Shop All</a></li>
+                        <li><a href="mens.html">Shop All</a></li>
                         <li class="hoverSub"><a href="#">Clothing</a>
                             <div class="sub-menu2">
                                 <div class="flexSub">
@@ -348,16 +348,8 @@ function navbar(){
             <div class="sub-menu2">
                 <div class="flexSub" id="lister">
                 <ul id="list">
-                    <li><a href="#">SIGN UP</a></li>
-                    <li><a href="#">MY LIKES</a></li>
-                    <li><a href="#">MY ALERTS</a></li>
-                    <li><a href="#">MY CLOSET</a></li>
-                    <li><a href="#">MY ORDER</a></li>
-                    <li><a href="#">MY LOYALTY</a></li>
-                    <li><a href="#">MY MESSAGES</a></li>
-                    <li><a href="#">INVITE FRIENDS</a></li>
-                    <li><a href="#">SETTINGS</a></li>
-                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="login.html">SIGN UP</a></li>
+                   
                 </ul>
                 </div>
            

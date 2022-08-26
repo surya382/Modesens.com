@@ -1,11 +1,9 @@
 #navbar{
     display: flex;
     justify-content: space-around;
-   
 }
 .right_top{
     display: flex;
-    
 }
 .right_top img{
     width:8%;
@@ -34,14 +32,16 @@ a{
 #navbar>a>img{
     width:60%;
     margin-top: 9%;
-    margin-left: 50%;
+    margin-left: 10%;
 }
+.menu{
+    /* border: 1px solid black; */
+    margin-left: -50px;
 
-.menu{border: 1px solid black;
 }
 .menu ul li{
-    margin:5px;
-    padding:15px;
+    padding:10px;
+    /* border: 1px solid black; */
 }
 .hoverSub{
     display: flex;
@@ -50,13 +50,14 @@ a{
 .sub-menu1,.sub-menu2{
     display: none;
 }
-
 .menu ul li:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .menu ul li:hover .sub-menu1 {
     display:block;
     position:absolute;
+    z-index: 1;
+    background-color: white;
 }
 .menu ul li:hover .sub-menu1 ul {
     display: block;

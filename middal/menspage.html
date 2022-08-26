@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mens</title>
-    <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="./style/Home.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./">
     <script src="https://kit.fontawesome.com/19c875d921.js" crossorigin="anonymous"></script>
 </head>
 
@@ -113,12 +115,22 @@
     </div>
     <p>When you follow our links to visit a brand or retailer’s website or make a purchase, ModeSens may earn a
         commission.</p>
+        <div id="footer"></div>
+
 </body>
 
 </html>
 <script type="module">
-    import navbar from "./navbar.js";
+          import navbar from "./scripts/navbar.js";
 
-    document.getElementById("navbar").innerHTML = navbar();
+
+document.getElementById("navbar").innerHTML = navbar();
+
+
+
+import footers from './scripts/footer.js';
+
+document.getElementById('footer').innerHTML = footers;
+
 </script>
 <script src="index.js"></script>
