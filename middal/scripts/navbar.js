@@ -35,7 +35,7 @@ function navbar(){
                                 </div>
                             </div>
                         </li>
-                        <li class="hoverSub" ><a href="#">Bags</a>
+                        <li class="hoverSub" ><a href="">Bags</a>
                             <div class="sub-menu2">
                                 <div class="flexSub">
                                     <h5>Shop By Category</h5>
@@ -114,7 +114,7 @@ function navbar(){
                                 </div>
                             </div>
                         </li>
-                        <li class="hoverSub"><a href="#">Beauty</a>
+                        <li class="hoverSub"><a href="beauty.html">Beauty</a>
                             <div class="sub-menu2">
                                 <div class="flexSub">
                                     <h5>Shop By Category</h5>
@@ -292,7 +292,7 @@ function navbar(){
                     </ul>
                 </div>
             </li>
-            <li> <a href="#">BEAUTY</a>
+            <li> <a href="beauty.html">BEAUTY</a>
                 <div class="sub-menu1">
                     <ul>
                         <li><a href="#">Shop All</a></li>

@@ -1,0 +1,44 @@
+#beauty_box{
+    display: flex;
+
+}
+#beauty_post{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-left: 10em;
+
+
+}
+.bueaty_product{
+    margin-top: 1em;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 15em;
+    border-radius: 1em;
+
+
+}
+.bueaty_product>img{
+    width: 70%;
+    /* border: 1px solid black; */
+    margin-left: 1%;
+
+}
+.bueaty_product>p{
+
+font-size: 0.7em;
+font-weight: bold;
+color: #8e8e8e;
+font-family: "SuisseIntl";
+}
+.bueaty_product>h3{
+    font-size: 0.8em;
+    font-weight: 00;
+    color: black;
+    font-family: "SuisseIntl";
+}
+
+/* <----------------sider_bar-------------> */
+
