@@ -69,14 +69,23 @@ appendData = (data) => {
         img.setAttribute("id", "pic")
         img.src = el.image;
 
+        let btn8= document.createElement("button");
+        btn8.setAttribute("id","btn8")
+        btn8.innerText="Quick View";
+
+        //img.append(btn8);
+
         let title = document.createElement("h3");
         title.innerText = el.title;
 
         let btn = document.createElement("button");
         btn.setAttribute("id", "btn")
+        btn.addEventListener("click",function(){
+            window.location.href="mens.html";
+        })
         btn.innerText = "SHOP NOW";
 
-        div.append(img, title, btn, icon);
+        div.append(img, btn8,title, btn, icon);
 
         document.getElementById("big").append(div);
     })
@@ -129,6 +138,10 @@ appendDt = (dt) => {
         img.setAttribute("id", "pic1")
         img.src = el.image;
 
+        let btn9= document.createElement("button");
+        btn9.setAttribute("id","btn9")
+        btn9.innerText="Quick View";
+
         let title = document.createElement("h4");
         title.innerText = el.title;
 
@@ -136,7 +149,7 @@ appendDt = (dt) => {
         price.innerText = `$ ${el.price}`;
 
 
-        div.append(img, title, price, icon);
+        div.append(img, btn9, title, price, icon);
 
         document.getElementById("box").append(div);
     })
@@ -204,3 +217,14 @@ function Toggle2(x) {
     
     }
 }
+
+document.getElementById("btn1").addEventListener("click",function(){
+    window.location.href="mens.html";
+})
+
+document.getElementById("btn5").addEventListener("click",function(){
+    window.location.href="mens.html";
+})
+document.getElementById("btn2").addEventListener("click",function(){
+    window.location.href="mens.html";
+})
