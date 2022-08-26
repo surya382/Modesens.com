@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/checkout.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="CheckoutContainer">
+      <h1>Checkout</h1>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="">
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="name" required placeholder="Enter Your Name">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required  placeholder="Enter Your mail">
+                  <label for="adr">Address</label>
+                  <input type="text" id="adr" required placeholder="Enter Your Address">
+                  <label for="city">City</label>
+                  <input type="text" id="city" required  placeholder="Enter You City">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" required placeholder="Enter State Code(KA)">
+                    </div>
+                    <div class="col-50">
+                      <label for="pin">Pin</label>
+                      <input type="number" id="pin" required placeholder="Enter PinCode">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <img src="https://card-logo.com/wp-content/uploads/2019/03/logo-visa.svg" alt="">
+                    <img src="https://card-logo.com/wp-content/uploads/2019/03/logo-mastercard.svg" alt="">
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" required placeholder="Enter Name as per Card">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="number" id="ccnum" required placeholder="Enter 16 digit card number">
+                  <label for="expmonth">Expiry Month</label>
+                  <input type="number" id="expmonth" required placeholder="MM">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Expiry Year</label>
+                      <input type="number" id="expyear" required placeholder="YYYY">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="password" id="cvv" name="cvv" required placeholder="3 Digit number on back of the card">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" > Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to Payment" class="btn">
+            </form>
+          </div>
+        </div>
+      
+        
+      </div>
+    </div>
+    
+</body>
+</html>
+<script type="module">
+
+  import navbar from './scripts/navbar.js';
+  let navbar1 = document.getElementById("navbar")
+  navbar1.innerHTML=navbar()
+</script>
+<script src="./scripts/checkout.js"></script>

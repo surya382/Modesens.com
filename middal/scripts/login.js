@@ -1,3 +1,4 @@
+
 // var logins = document.getElementById("login");
 // var registers = document.getElementById("register");
 // var btn = document.getElementById("btn");
@@ -49,6 +50,9 @@ var registers = document.getElementById("register");
 var btn = document.getElementById("btn");
 var Login_Userid = document.getElementById("login-userid").value;
 
+var register_Userid = document.getElementById("register-userid").value;
+
+
 
 // if(Login_Userid === register_Userid){
 //     alert("Login Successfully");
@@ -76,6 +80,15 @@ function login() {
 }
 
 function signup() {
+
+    alert("Register Successfully");
+
+}
+function signin() {
+    alert("Login Successfully");
+
+}
+
 
 let register_Userid = document.getElementById("register-userid").value;
 let register_emailid = document.getElementById("register-emailid").value;
@@ -137,3 +150,4 @@ else{
 
 
 // }
+
