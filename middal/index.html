@@ -6,18 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
-    <link rel="stylesheet" href="first.css">
+    <!-- <link rel="stylesheet" href="nav.css"> -->
+    <link rel="stylesheet" href="./style/Home.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
     <script src="https://kit.fontawesome.com/19c875d921.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./">
 </head>
 
 <body>
     <div id="navbar"></div>
     <div>
+    <div id="top-portion">
         <img id="image"
-            src="https://modesens.com/banner/13212/getimg/?img=%2Fbanner%2F20220824-modesens-LordTaylor-1140x400-EN.jpg"
+            src="https://modesens.com/banner/11843/getimg/?img=%2Fbanner%2F20220803-modesens-Sale-1140x400-EN.jpg"
             alt="error">
-        <button id="left">< </button>
-                <button id="right">></button>
+        <button id="left"> < </button>
+        <button id="right">></button>
     </div>
     <div id="text">
         <h2>Featured Partners</h2>
@@ -62,19 +67,33 @@
         </div>
     </div>
     <div id="line">
-        <h2>Special Offers</h2>
+        <div id="b">
+            <div id="b1"></div>
+            <h2>Special Offers</h2>
+            <div id="b2"></div>
+        </div>
+
     </div>
     <div id="big">
     </div>
-    <button id="btn1">VIEW MORE</button>
-    <h2>Trending Now</h2>
+    <button id="btn1" >VIEW MORE</button>
+    <div id="b">
+        <div id="b1"></div>
+        <h2>Trending Now</h2>
+        <div id="b2"></div>
+    </div>
+
     <div id="box">
     </div>
     <button id="btn2">SHOW MORE</button>
-    <h2>Community Posts</h2>
+    <div id="b">
+        <div id="b1"></div>
+        <h2>Community Posts</h2>
+        <div id="b2"></div>
+    </div>
     <div id="last"> </div>
     <button id="btn5">VIEW ALL</button>
-    <div id="footer">
+    <div id="bott">
         <div id="inside">
             <h2>Download the</h2>
             <h2>ModeSens App</h2><br>
@@ -92,10 +111,28 @@
             <img src="https://cdn.modesens.com/static/img/20211109downloadright.png">
         </div>
     </div>
-    <p>When you follow our links to visit a brand or retailer’s website or make a purchase, ModeSens may earn a commission.</p>
+    <p>When you follow our links to visit a brand or retailer’s website or make a purchase, ModeSens may earn a
+        commission.</p>
+        <div id="footer"></div>
 </body>
 
 </html>
 
 
+
 <script src="first.js"></script>
+
+<script type="module">
+    import navbar from "./scripts/navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+
+
+    import footers from './scripts/footer.js';
+    document.getElementById('footer').innerHTML = footers;
+
+    // console.log(footers)
+</script>
+<script src="index.js"></script>
+

@@ -10,7 +10,8 @@
 </head>
 <body>
     <div id="navbar"></div>
-    <h1>Checkout</h1>
+    <div id="CheckoutContainer">
+      <h1>Checkout</h1>
     <div class="row">
         <div class="col-75">
           <div class="container">
@@ -19,22 +20,22 @@
                 <div class="col-50">
                   <h3>Billing Address</h3>
                   <label for="fname">Full Name</label>
-                  <input type="text" id="fname" placeholder="Enter Your Name">
+                  <input type="text" id="name" required placeholder="Enter Your Name">
                   <label for="email">Email</label>
-                  <input type="text" id="email"  placeholder="Enter Your mail">
+                  <input type="email" id="email" required  placeholder="Enter Your mail">
                   <label for="adr">Address</label>
-                  <input type="text" id="adr"  placeholder="Enter Your Address">
+                  <input type="text" id="adr" required placeholder="Enter Your Address">
                   <label for="city">City</label>
-                  <input type="text" id="city"  placeholder="Enter You City">
+                  <input type="text" id="city" required  placeholder="Enter You City">
       
                   <div class="row">
                     <div class="col-50">
                       <label for="state">State</label>
-                      <input type="text" id="state" placeholder="Enter State Code(KA)">
+                      <input type="text" id="state" required placeholder="Enter State Code(KA)">
                     </div>
                     <div class="col-50">
                       <label for="pin">Pin</label>
-                      <input type="text" id="pin" placeholder="Enter PinCode">
+                      <input type="number" id="pin" required placeholder="Enter PinCode">
                     </div>
                   </div>
                 </div>
@@ -43,22 +44,24 @@
                   <h3>Payment</h3>
                   <label for="fname">Accepted Cards</label>
                   <div class="icon-container">
+                    <img src="https://card-logo.com/wp-content/uploads/2019/03/logo-visa.svg" alt="">
+                    <img src="https://card-logo.com/wp-content/uploads/2019/03/logo-mastercard.svg" alt="">
                   </div>
                   <label for="cname">Name on Card</label>
-                  <input type="text" id="cname" placeholder="Enter Name as per Card">
+                  <input type="text" id="cname" required placeholder="Enter Name as per Card">
                   <label for="ccnum">Credit card number</label>
-                  <input type="text" id="ccnum" placeholder="Enter 16 digit card number">
+                  <input type="number" id="ccnum" required placeholder="Enter 16 digit card number">
                   <label for="expmonth">Expiry Month</label>
-                  <input type="text" id="expmonth" placeholder="MM">
+                  <input type="number" id="expmonth" required placeholder="MM">
       
                   <div class="row">
                     <div class="col-50">
                       <label for="expyear">Expiry Year</label>
-                      <input type="text" id="expyear" placeholder="YYYY">
+                      <input type="number" id="expyear" required placeholder="YYYY">
                     </div>
                     <div class="col-50">
                       <label for="cvv">CVV</label>
-                      <input type="text" id="cvv" name="cvv" placeholder="3 Digit number on back of the card">
+                      <input type="password" id="cvv" name="cvv" required placeholder="3 Digit number on back of the card">
                     </div>
                   </div>
                 </div>
@@ -67,19 +70,21 @@
               <label>
                 <input type="checkbox" checked="checked" > Shipping address same as billing
               </label>
-              <input type="submit" value="Continue to payment" class="btn">
+              <input type="submit" value="Continue to Payment" class="btn">
             </form>
           </div>
         </div>
       
         
       </div>
+    </div>
+    
 </body>
 </html>
 <script type="module">
 
-  import navbar from './components/navbar.js';
+  import navbar from './scripts/navbar.js';
   let navbar1 = document.getElementById("navbar")
   navbar1.innerHTML=navbar()
 </script>
-<script src="checkout.js"></script>
+<script src="./scripts/checkout.js"></script>

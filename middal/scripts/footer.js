@@ -29,18 +29,18 @@ function footer() {
         
     </div>
 
-    <div id="connect">
+    <div id="conne">
         <h5>CONNECT WITH US</h5>
-        <div class="img">
+        <div class="icon-img">
             <img src="https://cdn.modesens.com/static/img/20220815download_ios.svg" alt="">
             <img src="https://cdn.modesens.com/static/img/20220815download_android.svg" alt="">
             <img src="https://cdn.modesens.com/static/img/20220815down_chromestrore.svg" alt="">
         </div>
     </div>
 
-    <div id="sign_up">
+    <div id="new-email">
         <h5>NEWSLETTER SIGN UP</h5>
-        <div>
+        <div class="inppp">
             <input type="text" id="email" placeholder="Email Address">
             <div class="select">
             <input type="checkbox" id="click">

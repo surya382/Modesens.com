@@ -1,0 +1,24 @@
+#CartContainer{
+display: flex;
+border: 2px solid green;
+}
+#cart{
+    border:3px solid blueviolet;
+    width:30%;
+}
+#CartContent{
+    width:70%;
+    margin:auto;
+    border:3px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2%;
+}
+#CartContent>div{
+    border:3px solid blue;
+    margin:auto;
+}
+.warnQty{
+    color:red;
+    font-weight: bold;
+}

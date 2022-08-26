@@ -1,0 +1,128 @@
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border-radius: 5px;
+    position: sticky;
+    top: 0px;
+}
+.right_top{
+    display: flex;
+    width:20%;
+    justify-content: space-around;
+    align-items: center;
+  
+    margin-top: 0%;
+}
+/* .user img{
+    width:100%;
+    border:3px solid red;
+    margin-left: 110%;
+    margin-top:34%;
+} */
+#navbar ul>li {
+    display: inline-block;
+    /* margin: auto; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#navbar>a>img{
+    width:60%;
+    margin-top: 9%;
+    margin-left: 10%;
+}
+.menu{
+    /* border: 1px solid black; */
+    margin-left: -50px;
+
+}
+.menu ul li{
+    padding:10px;
+    /* border: 1px solid black; */
+}
+.hoverSub{
+    display: flex;
+}
+
+.sub-menu1,.sub-menu2{
+    display: none;
+}
+.menu ul li:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(210, 194, 194);
+}
+.menu ul li:hover .sub-menu1 {
+    display:block;
+    position:absolute;
+    z-index: 1;
+    margin-top: 0%;
+    /* padding: 1%; */
+    
+}
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    /* margin:5px; */
+}
+.menu ul :hover .sub-menu1 ul li { 
+    /* width:150px; */
+    /* padding-top:3%; */
+    border-bottom: 1px dotted grey;
+    border-radius: 5px;
+    text-align: center;
+}
+.menu ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.hoverSub:hover .sub-menu2{
+display: block;
+position: absolute;
+background: rgb(250, 245, 245);
+margin-top: 0%;
+border-radius: 15px;
+}
+.hoverSub:hover .sub-menu2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.hoverSub:hover .sub-menu2>.flexSub>ul{
+    display:grid;
+}
+.hoverSub:hover .sub-menu2>.flexSub{
+   padding:1%;
+}
+/* #lister{
+    margin-top: 50%;
+    
+} */
+/* #list *{
+    width:100%;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 5%;
+} */
+
+.right_top>a>img{
+    width:40px;
+    height: 40px;
+    margin-top:10%;
+}
+.right_top>a:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* .inpHover{
+    display: none;
+} */
+/* .querySearch:hover .inpHover{
+    display: unset;
+    position:absolute;
+    width:250px;
+    font-size: 18px;
+    top:2vh;
+    right:45vh;
+    height: 2.5em;
+} */

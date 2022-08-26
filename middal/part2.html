@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+<style>
+    #main_div{display: flex;
+    gap: 20px;}
+</style>
+</head>
+<body>
+    <h4>ModeSens / 
+        Designers / 
+        Alexander Mcqueen / 
+        Men / 
+        Accessories </h4>
+
+    <div id="main_div">
+
+        <div id="image">
+
+        </div>
+        <div id="detail"></div>
+    </div>
+</body>
+</html>
+
+<script>
+
+let data=JSON.parse(localStorage.getItem("cart_data"));
+
+display(data);
+
+
+function display(data){
+
+    data.forEach(function(el){
+
+
+        let pic=document.createElement("img");
+        pic.setAttribute("src",el.image);
+        pic.style.width="100%";
+
+        document.querySelector("#image").append(pic);
+
+        let name=document.createElement("h4");
+        name.innerText=el.name;
+
+        let price=document.createElement("h4")
+        price.innerText="INR"+" "+el.price;
+         
+        document.querySelector("#detail").append(name,price);
+
+    });
+}
+
+</script>

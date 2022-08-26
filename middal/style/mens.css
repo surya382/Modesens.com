@@ -6,7 +6,7 @@
 #sidebar>h4{color: gray;
 cursor: pointer;}
 
-#sidebar,#dummy{border: 1px solid black;
+/* #sidebar,#dummy{border: 1px solid black; */
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
@@ -15,7 +15,7 @@ width: 20%;}
 #whole_div{width: 80%;}
 
 
- #append,#t_head{border: 1px solid black;
+ /* #append,#t_head{border: 1px solid black; */
   
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -31,7 +31,7 @@ height: 40px;}
 #filt_div{text-align: left;
 cursor: pointer;}
 #filt_div>div{text-align: center;
-border: 1px solid black;
+/* border: 1px solid black; */
 width: 60%;
 margin: auto;
 
@@ -78,14 +78,15 @@ color: black;}
 
 
 #append{display: grid;
-grid-template-columns:repeat(3,1fr) ;}
+grid-template-columns:repeat(4,1fr) ;}
 
-#append>div{border: 1px solid gray;
+#append>div{border: 1px solid rgb(219, 218, 218);
 text-align: center;}
 
-#but_div{display: flex;
+
+  #but_div{display: flex;
 gap: 20px;
-border: 1px solid black;
+/* border: 1px solid black; */
 width: 15%;
 margin: auto;
 margin-top: 30px;
@@ -101,3 +102,6 @@ margin-bottom: 10px;}
 
 #but_div>button:hover{border-bottom: 1px solid red;}
 
+#search_bar{cursor: pointer;}
+
+/* #footer_sec{border: 1px solid black;} */

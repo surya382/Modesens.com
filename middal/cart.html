@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/cart.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="CartContainer">
+        <div id="CartContent"></div>
+        <div id="cart">
+            <h2>APPLY COUPON FOR Rs.1000/- OFF</h2>
+            <h3>Discount Coupon
+                <input type="text" class="coupon_val">
+            </h3>
+            <button onclick="checkCoupon()">Apply</button>
+            <p class="couponDisplay"></p>
+            <h1>Total Price : <span class="total_cart_price"></span> </h1>
+            <h3>Item Price : <span class="total_item_price"></span> </h3>
+            <h3>Delivery  : <span class="delivery"></span> </h3>
+            <h3>GST : <span class="gst"></span> </h3>
+            <h3 class="discount_head"></h3>
+            <hr>
+            <h2>Total Payable : <span class="total_payable_price"></span> </h2>
+            <a class="cart_btn" href="checkout.html">Proceed to Pay</a>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<script type="module">
+
+    import navbar from './scripts/navbar.js';
+    let navbar1 = document.getElementById("navbar")
+    navbar1.innerHTML=navbar()
+</script>
+
+<script src="./scripts/cart.js"></script>

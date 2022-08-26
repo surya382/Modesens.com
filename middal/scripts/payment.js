@@ -1,6 +1,6 @@
 let redirecter=document.querySelector(".checker")
 let otp=12345;
-let chance=1;
+let chance=3;
 let head=document.createElement("h1")
 head.innerText="Redirecting to Payment Page"
 let head2=document.createElement("h2")
@@ -22,11 +22,12 @@ setTimeout(function(){
     let inp=document.createElement("input")
     inp.setAttribute("id","otp_input")
     inp.setAttribute("placeholder","Enter OTP")
+    let attempt=document.createElement("p")
     let btn=document.createElement("button")
     btn.setAttribute("id","otp_btn")
     btn.innerText="Proceed"
     btn.addEventListener("click",function(){
-        checkOTP(inp,btn)
+        checkOTP(inp,btn,attempt,timer)
     })
     btn2=document.createElement("button")
     btn2.innerText="Cancel Payment"
@@ -35,26 +36,31 @@ setTimeout(function(){
         window.location.href="payment.html"
     })
     let timer=document.createElement("h3")
-    timer.innerText="04:59";
-    redirecter.append(hd1,hd2,hd3,inp,btn,btn2,timer)
+    timer.innerText="00:59";
+    redirecter.append(hd1,hd2,hd3,inp,attempt,btn,btn2,timer)
 
-    function checkOTP(inp,btn){
-        if(chance<4){
+    function checkOTP(inp,btn,attempt,timer){
+        if(chance==1){
+            btn.disabled=true;
+            attempt.innerText=`You have Exceeded attempt limit!.  Please return`
+            cleared(timer,"yes")
+        }else{
             if(inp.value==otp){
                 successfull()
             }else{
-                chance++
+                chance--
+                attempt.innerText=`You left with ${chance} attempt!..`
+                attempt.style.color="red"
             }
-        }else{
-            btn.disabled=true;
         }
     }
 
 
 
-    let i=10;
+    let i=59;
     let j=0;
     let id=setInterval(function(){
+        i--;
         if(i==0 && j==0){
            cleared(timer)
         } else if(i==0){
@@ -64,12 +70,17 @@ setTimeout(function(){
         }else{
             timer.innerText=`0${j}:${i}`
         }
-        i--;
         
     },1000)
 
-    function cleared(timer){
-        timer.innerText="Session Expired"
+    function cleared(timer,a){
+        if(a=="yes"){
+            timer.innerText="You have Exceeded attempt limit!.  Please return"
+        timer.style.color="red"
+        }else{
+            timer.innerText="Session Expired"
+        timer.style.color="red"
+        }
         document.querySelector("#otp_btn").disabled=true;
         document.querySelector("#otp_input").disabled=true;
         document.querySelector("#cancel_otp").disabled=true;
@@ -77,12 +88,13 @@ setTimeout(function(){
         let head=document.createElement("h3")
         head.innerText="Please return to checkout and retry"
         let anchor=document.createElement("a")
+        anchor.setAttribute("class","return")
         anchor.innerText="Return"
-        anchor.href="payment.html"
+        anchor.href="checkout.html"
         redirecter.append(head,anchor)
     }
 },3000)
 
 function successfull(){
-
+    window.location.href="order.html"
 }
