@@ -5,55 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products</title>
+   <link rel="stylesheet" href="./style/footer.css">
+
+   <link rel="stylesheet" href="./style/part2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    #main_div{display: flex;
-    gap: 20px;}
+   
 </style>
 </head>
 <body>
-    <h4>ModeSens / 
-        Designers / 
-        Alexander Mcqueen / 
-        Men / 
-        Accessories </h4>
+   
 
     <div id="main_div">
 
         <div id="image">
+          <div id="top_img">
+            <h4>ModeSens / 
+                Designers / 
+                Alexander Mcqueen / 
+                Men / 
+                Accessories </h4>
+
+                <h2 ><i class="fa fa-heart-o" aria-hidden="true"></i>
+                </h2>
+                
+          </div>  
 
         </div>
-        <div id="detail"></div>
+        <div id="detail">
+            <div id="detail_item">
+
+            </div>
+
+
+            <div id="additional">
+                <select  id="qty">
+                    <option value="1">Quantity: 1</option>
+                    <option value="2">Quantity: 2</option>
+                    <option value="3">Quantity: 3</option>
+                    <option value="4">Quantity: 4</option>
+                    <option value="5">Quantity: 5</option>
+                </select>
+
+
+                <select  id="size">
+                    <option value="Medium">size: M</option>
+                    <option value="Large">size: L</option>
+                    <option value="Small">size: S</option>
+                    <option value="Xl">size: XL</option>
+                    <option value="XXL">size: XXL</option>
+                </select>
+
+                <select  id="color">
+                    <option value="Red">color: RED</option>
+                    <option value="Black">color: Black</option>
+                    <option value="Blue">color: Blue</option>
+                    <option value="Green">color: Green</option>
+                    <option value="Pink">color: Pink</option>
+                </select>
+            </div>
+
+           <div id="buts"><button id="cart_but" class="buttons" onclick="add_c()">ADD TO CART</button>
+            <button id="now" class="buttons" onclick="now()">BUY NOW</button></div> 
+
+            <h5 id="notify"></h5>
+
+        </div>
     </div>
+
+    <div id="subs">
+        <div id="alert">
+        <h2>Subscribe To Alerts For This Product</h2>
+         <p>SET ALERT</p>
+        </div>
+                
+        <p>We'll keep our eyes out for you. Subscribe to receive automatic email and app updates to be the first to know when this item becomes available in new stores, sizes or prices.</p>
+       
+        <img width="100%" src="https://modesens.com/banner/13190/getimg/?img=%2Fbanner%2F20220822-modesens-Matchesfashion-1440x250-M-EN.jpg" alt="">
+    </div>
+
+    <div id="prod_det">
+<h2>Product Details</h2>
+
+<div id="details_prod">
+<div id="details_prod_img"></div>
+    <p>Cotton-blend twill cap in black. Logo embroidered in white at face. Embroidered eyelets at crown. Curved brim. Logo embroidered in white and adjustable cinch strap at back. Tonal cupro twill lining. Fully lined. Logo-engraved silver-tone hardware. Approx. 2.75 brim. Supplier color: Black</p>
+
+</div>
+    </div>
+
+    <div id="footer"></div>
+   
 </body>
 </html>
 
-<script>
+<script src="./scripts/part2.js">
 
-let data=JSON.parse(localStorage.getItem("cart_data"));
+</script>
 
-display(data);
+<script type="module">
 
+    import footer from './scripts/footer.js';
 
-function display(data){
-
-    data.forEach(function(el){
-
-
-        let pic=document.createElement("img");
-        pic.setAttribute("src",el.image);
-        pic.style.width="100%";
-
-        document.querySelector("#image").append(pic);
-
-        let name=document.createElement("h4");
-        name.innerText=el.name;
-
-        let price=document.createElement("h4")
-        price.innerText="INR"+" "+el.price;
-         
-        document.querySelector("#detail").append(name,price);
-
-    });
-}
-
+    document.querySelector("#footer").innerHTML=footer;
 </script>

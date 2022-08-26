@@ -6,7 +6,7 @@
 #sidebar>h4{color: gray;
 cursor: pointer;}
 
-/* #sidebar,#dummy{border: 1px solid black; */
+ #sidebar,#dummy{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
@@ -15,7 +15,7 @@ width: 20%;}
 #whole_div{width: 80%;}
 
 
- /* #append,#t_head{border: 1px solid black; */
+  #append,#t_head{
   
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -31,7 +31,7 @@ height: 40px;}
 #filt_div{text-align: left;
 cursor: pointer;}
 #filt_div>div{text-align: center;
-/* border: 1px solid black; */
+ border: 1px solid black; 
 width: 60%;
 margin: auto;
 
