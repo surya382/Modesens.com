@@ -1,6 +1,7 @@
 #navbar{
     display: flex;
     justify-content: space-around;
+
     background: white;
     border-radius: 5px;
     position: sticky;
@@ -15,14 +16,36 @@
     margin-top: 0%;
 }
 /* .user img{
+
+}
+.right_top{
+    display: flex;
+}
+.right_top img{
+    width:8%;
+    height:50%;
+    display: inline-block;
+    border:3px solid blue;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+.user img{
+
     width:100%;
     border:3px solid red;
     margin-left: 110%;
     margin-top:34%;
+
 } */
 #navbar ul>li {
     display: inline-block;
     /* margin: auto; */
+
+}
+#navbar ul>li {
+    display: inline-block;
+    margin: auto;
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
@@ -53,12 +76,15 @@ a{
 }
 .menu ul li:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     background-color: rgb(210, 194, 194);
+
 }
 .menu ul li:hover .sub-menu1 {
     display:block;
     position:absolute;
     z-index: 1;
+
     margin-top: 0%;
     /* padding: 1%; */
     
@@ -70,6 +96,17 @@ a{
 .menu ul :hover .sub-menu1 ul li { 
     /* width:150px; */
     /* padding-top:3%; */
+
+    background-color: white;
+}
+.menu ul li:hover .sub-menu1 ul {
+    display: block;
+    margin:5px;
+}
+.menu ul li:hover .sub-menu1 ul li { 
+    width:150px;
+    padding-top:3%;
+
     border-bottom: 1px dotted grey;
     border-radius: 5px;
     text-align: center;
@@ -80,9 +117,11 @@ a{
 .hoverSub:hover .sub-menu2{
 display: block;
 position: absolute;
+
 background: rgb(250, 245, 245);
 margin-top: 0%;
 border-radius: 15px;
+
 }
 .hoverSub:hover .sub-menu2{
     display: grid;
@@ -93,6 +132,7 @@ border-radius: 15px;
     display:grid;
 }
 .hoverSub:hover .sub-menu2>.flexSub{
+
    padding:1%;
 }
 /* #lister{
@@ -100,10 +140,20 @@ border-radius: 15px;
     
 } */
 /* #list *{
+
+   padding:2%;
+}
+#lister{
+    margin-top: 50%;
+    
+}
+#list *{
+
     width:100%;
     font-weight: bold;
     font-size: 17px;
     padding-top: 5%;
+
 } */
 
 .right_top>a>img{
@@ -118,6 +168,18 @@ border-radius: 15px;
     display: none;
 } */
 /* .querySearch:hover .inpHover{
+
+}
+.right_top>a>img{
+    width:90%;
+    height: 50%;
+    margin-top: 35%;
+}
+.inpHover{
+    display: none;
+}
+.querySearch:hover .inpHover{
+
     display: unset;
     position:absolute;
     width:250px;
@@ -125,4 +187,8 @@ border-radius: 15px;
     top:2vh;
     right:45vh;
     height: 2.5em;
+
 } */
+
+}
+
