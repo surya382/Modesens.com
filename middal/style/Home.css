@@ -3,6 +3,13 @@
     padding: 0px;
 }
 
+#image {
+    display: block;
+    width: 90vw;
+    margin: auto;
+    z-index: 0;
+}
+
 div {
     margin: 20px auto;
     /* width: 90vw; */
@@ -12,7 +19,7 @@ div {
 #right {
     position: absolute;
     top: 42%;
-    font-size: 40px;
+    font-size: 60px;
     color: white;
     /* rgb, hexa,rgba */
     background-color: rgba(100, 100, 100, 0.4);
@@ -39,13 +46,13 @@ body {
 #text {
     margin-top: 50px;
     text-align: center;
-    line-height:30px;
+    line-height: 30px;
 }
 
 h3 {
     color: #947F7F;
     word-spacing: 2px;
-    font-size:20px;
+    font-size: 20px;
     margin-top: 15px;
 }
 
@@ -84,6 +91,30 @@ h3 {
 #pic {
     width: 100%;
     height: 400px;
+    position: relative;
+}
+#btn8 {
+    position: absolute;
+    opacity: 0;
+    top:58%;
+    left: 14%;
+    padding:12px 78px;
+    font-size: 22px;
+    border: 1px solid;
+}
+#pic:hover {
+    opacity: 0.9;
+}
+#btn8:hover {
+    background-color:white;
+    background: transparent;
+    /* transition: .8s; */
+    opacity:1;
+    color: #FFFFFF;
+    /* color: red; */
+    border: 1px solid black;
+    font-weight: bold;
+   
 }
 
 #box {
@@ -103,6 +134,30 @@ h3 {
 #pic1 {
     width: 100%;
     height: 400px;
+    position: relative;
+}
+#btn9 {
+    position: absolute;
+    opacity: 0;
+    top:55%;
+    left: 5%;
+    padding:12px 60px;
+    font-size:18px;
+    border: 1px solid;
+}
+#pic1:hover {
+    opacity: 0.9;
+}
+#btn9:hover {
+    background-color:white;
+    background: transparent;
+    /* transition: .8s; */
+    opacity:1;
+    color: #FFFFFF;
+    /* color: red; */
+    border: 1px solid black;
+    font-weight: bold;
+   
 }
 
 #btn {
@@ -213,7 +268,7 @@ h4 {
 #btn5 {
     display: block;
     margin: auto;
-    margin-top:40px;
+    margin-top: 40px;
     width: 100px;
     padding: 10px;
     background-color: #FFFFFF;
@@ -240,6 +295,7 @@ h4 {
     font-size: 25px;
     z-index: 1;
 }
+
 #bott {
     width: 100vw;
     background-color: #F8F7F6;
@@ -247,19 +303,22 @@ h4 {
     text-align: center;
     margin-top: 40px;
 }
+
 #inside {
-    width:18vw;
+    width: 18vw;
     display: flex;
     flex-direction: column;
     margin: 40px auto;
 }
+
 #inside1 {
-    width:30vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     margin: 40px auto;
 }
-#inside > button {
+
+#inside>button {
     display: block;
     margin: auto;
     width: 12vw;
@@ -267,46 +326,55 @@ h4 {
     color: white;
     background-color: black;
 }
-#inside1 > button {
+
+#inside1>button {
     display: block;
-    margin:auto;
+    margin: auto;
     width: 12vw;
     padding: 10px;
     color: white;
     background-color: black;
 }
-#inside > h2 {
-    margin-top:2px;
+
+#inside>h2 {
+    margin-top: 2px;
 }
-#inside1 > h2 {
-    margin-top:2px;
+
+#inside1>h2 {
+    margin-top: 2px;
 }
+
 p {
-    margin:15px auto;
-   text-align: center;
-   font-size: 18px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 20px;
 }
+
 #post {
     width: 80vw;
     margin: 30px auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
-#post > img {
+
+#post>img {
     width: 210px;
     height: 45vh;
 }
+
 #b {
     display: flex;
     width: 84vw;
     text-align: center;
 }
+
 #b1 {
-    width:34vw;
+    width: 34vw;
     border-bottom: 1px rgb(146, 134, 134) solid;
 }
+
 #b2 {
-    width:34vw;
+    width: 34vw;
     border-bottom: 1px rgb(146, 134, 134) solid;
 }
