@@ -358,7 +358,6 @@ function navbar(){
 
         <a href="login.html"><img id=""Mcart src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt=""></a>
         <input type="text" placeholder="Search" oninput="">
-        </div> 
     </div>`
 }
 
