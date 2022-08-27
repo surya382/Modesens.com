@@ -19,7 +19,9 @@
 
 #text{
     /* border: 1px solid black; */
-
+    margin-top: 7em;
+    padding-left: 20px;
+    
 }
 #text>h2{
  margin-top: 1em;
@@ -35,11 +37,11 @@
 
 .form-box {
     width: 380px;
-    height: 480px;
+    height: 80vh;
     position: relative;
     margin: 6% auto;
     /* margin-left: 40em; */
-
+    background-color: transparent;
     padding: 5px;
     overflow: hidden;
     border-radius: 1em;
@@ -48,7 +50,7 @@
 }
 
 .button-box {
-
+    width: 230px;
     margin: 35px auto;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -61,7 +63,7 @@
     background: transparent;
     border: 0;
     outline: none;
-    color: rgb(101, 101, 195);
+    color: white;
     position: relative;
 }
 
@@ -77,7 +79,7 @@
 }
 
 .icon {
-    margin: 330px auto;
+    margin: 23em auto;
     text-align: center;
 }
 
@@ -114,7 +116,7 @@
     display: block;
     margin: auto;
     background: black;
-    color: rgb(101, 101, 195);
+    color: white;
     border: 0;
     outline: none;
     border-radius: 30px;
@@ -138,4 +140,27 @@ span {
 
 #register {
     left: 450px;
+}
+#chickbox{
+    color: white;
+    
+}
 
+::placeholder { 
+    color: white;
+    opacity: 1; 
+  }
+
+
+  @media all and (min-width:481px) and (max-width: 768px) {
+  
+}
+
+@media all and (min-width:320px) and (max-width:480px) {
+   
+}
+
+.notes{
+    color: red;
+    font-size: 0.7em;
+}

@@ -1,71 +1,7 @@
-
-// var logins = document.getElementById("login");
-// var registers = document.getElementById("register");
-// var btn = document.getElementById("btn");
-// var Login_Userid = document.getElementById("login-userid").value;
-// var register_Userid = document.getElementById("register-userid").value;
-
-
-// // if(Login_Userid === register_Userid){
-// //     alert("Login Successfully");
-// // }else{
-// //     alert("Wrong UserId");
-
-// // }
-
-// // function user(){
-
-// //     localStorage.setItem("login_userid"JSON.stringify(register_Userid))
-
-// // }
-
-// function register() {
-//     logins.style.left = "-400px";
-//     registers.style.left = "50px";
-//     btn.style.left = "110px";
-// }
-
-// function login() {
-//     logins.style.left = "50px";
-//     registers.style.left = "450px";
-//     btn.style.left = "0";
-// }
-
-// function signup() {
-//     alert("Register Successfully");
-
-// }
-// function signin() {
-//     alert("Login Successfully");
-
-// }
-
-
-
-
-
-
 var logins = document.getElementById("login");
 var registers = document.getElementById("register");
 var btn = document.getElementById("btn");
-var Login_Userid = document.getElementById("login-userid").value;
-
-var register_Userid = document.getElementById("register-userid").value;
-
-
-
-// if(Login_Userid === register_Userid){
-//     alert("Login Successfully");
-// }else{
-//     alert("Wrong UserId");
-
-// }
-
-// function user(){
-
-//     localStorage.setItem("login_userid"JSON.stringify(register_Userid))
-
-// }
+var Login_Userid = document.getElementById("login-email").value;
 
 function register() {
     logins.style.left = "-400px";
@@ -79,75 +15,106 @@ function login() {
     btn.style.left = "0";
 }
 
-function signup() {
-
-    alert("Register Successfully");
-
-}
 function signin() {
-    alert("Login Successfully");
+    let Detail = JSON.parse(localStorage.getItem("data"));
 
-}
-
-
-let register_Userid = document.getElementById("register-userid").value;
-let register_emailid = document.getElementById("register-emailid").value;
-let register_passward = document.getElementById("register-passward").value;
-
-    let data = {
-        register_Userid:register_Userid,
-        register_emailid: register_emailid,
-        register_passward: register_passward
+    if (Detail.length === 0) {
+        alert("No user signup");
+        return;
     }
 
-    localStorage.setItem("signup_data",JSON.stringify(data));
+    let obj1 = {
 
+        login_email: document.getElementById("login-email").value,
+        login_passward: document.getElementById("login-passward").value,
+        login_contact: document.getElementById("login-phone").value
+    }
+    let Details1 = false;
+
+    //  debugger
+
+    Detail.forEach(function (el) {
+        console.log(el)
+
+
+        if (el.personemail === obj1.login_email && el.prpassword === obj1.login_passward && el.contact === obj1.login_contact) {
+            Details1 = true;
+            localStorage.setItem("final", JSON.stringify(el));
+            alert("Succefully Log In");
+            window.location.href = "index.html"
+
+        }
+    })
+
+    if (Details1 === false) {
+        alert("User Does Not Exist")
+    }
+
+}
+let Detail = JSON.parse(localStorage.getItem("data")) || [];
+
+
+function signup() {
+
+    let obj = {
+
+        personname: document.getElementById("register-userid").value,
+        personemail: document.getElementById("register-emailid").value,
+        prpassword: document.getElementById("register-passward").value,
+        contact: document.getElementById("register-phone").value,
+        age: document.getElementById("register-age").value,
+    }
+
+    if (obj.personname != "" && obj.personemail != "" && obj.prpassword != "" && obj.prpassword.length >= "8" && (obj.prpassword.includes("@") || obj.prpassword.includes("#")) && obj.contact.length == "10") {
+
+        alert("Successfully signed up");
+        Detail.push(obj);
+        localStorage.setItem("data", JSON.stringify(Detail));
+        // window.location.href = "log.html";
+    }
+    else if (obj.personname == "" || obj.personemail == "" || obj.prpassword == "" || obj.contact == "" || obj.age == "") {
+
+        alert("Please Enter All the Details");
+    }
+    else {
+        alert("Please use Special character @ or #");
+    }
 }
 
 
 
-function signin() {
-let data = JSON.parse(localStorage.getItem('signup_data'))
-
-let login_Userid = document.getElementById("login-userid").value;
-let login_passward = document.getElementById("login-passward").value;
 
 
 
-console.log(data)
-
-    // debugger
-if(data.register_Userid === login_Userid && data.register_passward === login_passward ){
-
-    window.alert("Login Successful");
-}
-else{
-    window.alert("Wrong Passward");
-
-}
-
-}
 
 
 
-// function get_itom(name,image,email,country){
-//     this.name=name;
-//     this.image=image;
-//     this.email=email;
-//     this.country=country;
-// }
-
-// function save() {
-
-//     let image = document.getElementById('image').value;
-//     let name = document.getElementById('name').value;
-//     let email = document.getElementById('email').value;
-//     let country = document.getElementById('country').value;
 
 
-//     let itom = new get_itom(name,image,email,country)
-// localStorage.setItem("user",JSON.stringify(itom))
 
 
-// }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
