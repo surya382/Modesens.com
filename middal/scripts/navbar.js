@@ -358,27 +358,7 @@ function navbar(){
 
         <a href="login.html"><img id=""Mcart src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt=""></a>
         <input type="text" placeholder="Search" oninput="">
-        </div>
-        
-        
-
-        <div class="user hoverSub">
-            <img  src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt="">
-            <div class="sub-menu2">
-                <div class="flexSub" id="lister">
-                <ul id="list">
-                    <li><a href="login.html">SIGN UP</a></li>
-                   
-                </ul>
-                </div>
-           
-            </div>
-        </div>
-        
-        <img  src="https://img.icons8.com/ios-glyphs/452/search--v1.png" alt="">
-        <input type="text" name="" class="inpHover">
-
-        
+        </div> 
     </div>`
 }
 
