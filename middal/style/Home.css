@@ -7,12 +7,12 @@
     display: block;
     width: 90vw;
     margin: auto;
-    z-index: 0;
 }
 
 div {
     margin: 20px auto;
     /* width: 90vw; */
+    position: relative;
 }
 
 #left,
@@ -73,7 +73,7 @@ h3 {
 }
 
 #big {
-    width: 90vw;
+    width: 80vw;
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -97,9 +97,9 @@ h3 {
     position: absolute;
     opacity: 0;
     top:58%;
-    left: 14%;
-    padding:12px 78px;
-    font-size: 22px;
+    left: 20%;
+    padding:15px 78px;
+    font-size: 28px;
     border: 1px solid;
 }
 #pic:hover {
@@ -140,11 +140,12 @@ h3 {
     position: absolute;
     opacity: 0;
     top:55%;
-    left: 5%;
+    left: 15%;
     padding:12px 60px;
-    font-size:18px;
+    font-size:28px;
     border: 1px solid;
 }
+
 #pic1:hover {
     opacity: 0.9;
 }
@@ -264,7 +265,17 @@ h4 {
     font-size: 25px;
     z-index: 1;
 }
-
+#btn10{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 100px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px rgb(124, 124, 118) solid;
+    font-weight: bold;
+    cursor: pointer;
+}
 #btn5 {
     display: block;
     margin: auto;
@@ -277,7 +288,7 @@ h4 {
     cursor: pointer;
 }
 
-#btn5:hover {
+#btn5:hover,#btn10:hover {
     background-color: black;
     transition: .5s;
     color: white;
@@ -350,7 +361,7 @@ p {
     font-size: 20px;
 }
 
-#post {
+#post{
     width: 80vw;
     margin: 30px auto;
     display: grid;
@@ -359,7 +370,7 @@ p {
 }
 
 #post>img {
-    width: 210px;
+    width: 350px;
     height: 45vh;
 }
 
