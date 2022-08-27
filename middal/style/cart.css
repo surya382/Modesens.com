@@ -1,0 +1,90 @@
+#CartContainer{
+display: flex;
+}
+#cart{
+    width:30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height:550px;
+    position: sticky;
+    top:8vh;
+    border-radius: 10px;
+    z-index: -1;
+}
+#CartContent{
+    width:70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2%;
+}
+#CartContent>div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin:auto;
+    padding: 3%;
+    font-size: 18px;
+    border-radius: 15px;
+}
+#CartContent>div>button{
+    border: 0px;
+    padding: 2%;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    border-radius: 5px;
+}
+#CartContent>div *{
+    margin-left: 2%;
+}
+#CartContent>div>img{
+    width: 350px;
+    height:450px;
+}
+.qty_btn{
+    display:flex;
+    width:50%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+.qty_btn>button{
+    width:30px;
+    height:40px;
+    font-size: 30px;
+}
+.warnQty{
+    color:red;
+    font-weight: bold;
+    width:80%;
+}
+#cart *{
+    margin-left: 10%;
+    margin-top: 1%;
+}
+#cart span,.discount_head{
+    position:absolute;
+    left:55%;
+}
+.discount_head{
+    top:62%;
+}
+#coupon_apply{
+display: inline-block;
+margin-left: 40%;
+}
+
+#cart_btn{
+    border:1px solid black;
+    padding:1.5% 8%;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 30%;
+}
+#cart_btn:hover{
+    border:1px solid black;
+    background-color: black;
+    color:white;
+}
