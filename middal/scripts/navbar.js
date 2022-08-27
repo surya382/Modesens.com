@@ -2,7 +2,7 @@ function navbar(){
     return ` <a href="index.html"><img src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg" alt=""></a>
     <div class="menu">
         <ul>
-            <li class="active"> <a href="women.html">WOMEN</a>
+            <li class="active"> <a href="womens.html">WOMEN</a>
                 <div class="sub-menu1">
                     <ul>
                         <li><a href="womens.html">Shop All</a></li>
