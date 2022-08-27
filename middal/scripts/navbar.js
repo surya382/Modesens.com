@@ -2,35 +2,35 @@ function navbar(){
     return ` <a href="index.html"><img src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg" alt=""></a>
     <div class="menu">
         <ul>
-            <li class="active"> <a href="#">WOMEN</a>
+            <li class="active"> <a href="women.html">WOMEN</a>
                 <div class="sub-menu1">
                     <ul>
-                        <li><a href="#">Shop All</a></li>
-                        <li class="hoverSub"><a href="#">Clothing</a>
+                        <li><a href="womens.html">Shop All</a></li>
+                        <li class="hoverSub"><a href="womens.html">Clothing</a>
                             <div class="sub-menu2">
                                 <div class="flexSub">
                                     <h5>Shop By Category</h5>
                                 <ul>
-                                    <li><a href="#">NEW ARRIVALS</a></li>
-                                    <li><a href="#">ALL CLOTHING</a></li>
-                                    <li><a href="#">BEACH WEAR</a></li>
-                                    <li><a href="#">DRESSES</a></li>
-                                    <li><a href="#">TOPS</a></li>
-                                    <li><a href="#">SKIRTS</a></li>
-                                    <li><a href="#">JEANS</a></li>
-                                    <li><a href="#">PANTS</a></li>
+                                    <li><a href="womens.html">NEW ARRIVALS</a></li>
+                                    <li><a href="womens.html">ALL CLOTHING</a></li>
+                                    <li><a href="womens.html">BEACH WEAR</a></li>
+                                    <li><a href="womens.html">DRESSES</a></li>
+                                    <li><a href="womens.html">TOPS</a></li>
+                                    <li><a href="womens.html">SKIRTS</a></li>
+                                    <li><a href="womens.html">JEANS</a></li>
+                                    <li><a href="womens.html">PANTS</a></li>
                                 </ul>
                                 </div>
                                 <div class="flexSub">
                                     <h5>Shop By List</h5>
                                 <ul>
-                                    <li><a href="#">LUXURY SHIRTS</a></li>
-                                    <li><a href="#">WIDELEG PANTS</a></li>
-                                    <li><a href="#">PRINTED BLOWS</a></li>
-                                    <li><a href="#">MINI DRESSES</a></li>
-                                    <li><a href="#">SPRING'S TOP SKIRTS</a></li>
-                                    <li><a href="#">FEELING TRANSPARENT</a></li>
-                                    <li><a href="#">VESTED INTEREST</a></li>
+                                    <li><a href="womens.html">LUXURY SHIRTS</a></li>
+                                    <li><a href="womens.html">WIDELEG PANTS</a></li>
+                                    <li><a href="womens.html">PRINTED BLOWS</a></li>
+                                    <li><a href="womens.html">MINI DRESSES</a></li>
+                                    <li><a href="womens.html">SPRING'S TOP SKIRTS</a></li>
+                                    <li><a href="womens.html">FEELING TRANSPARENT</a></li>
+                                    <li><a href="womens.html">VESTED INTEREST</a></li>
                                 </ul>
                                 </div>
                             </div>
@@ -165,14 +165,14 @@ function navbar(){
                                 <div class="flexSub">
                                     <h5>Shop By Category</h5>
                                 <ul>
-                                    <li><a href="#">NEW ARRIVALS</a></li>
-                                    <li><a href="#">ALL CLOTHING</a></li>
-                                    <li><a href="#">BEACH WEAR</a></li>
-                                    <li><a href="#">DRESSES</a></li>
-                                    <li><a href="#">TOPS</a></li>
-                                    <li><a href="#">SHORTS</a></li>
-                                    <li><a href="#">JEANS</a></li>
-                                    <li><a href="#">PANTS</a></li>
+                                    <li><a href="menspage.html">NEW ARRIVALS</a></li>
+                                    <li><a href="menspage.html">ALL CLOTHING</a></li>
+                                    <li><a href="menspage.html">BEACH WEAR</a></li>
+                                    <li><a href="menspage.html">DRESSES</a></li>
+                                    <li><a href="menspage.html">TOPS</a></li>
+                                    <li><a href="menspage.html">SHORTS</a></li>
+                                    <li><a href="menspage.html">JEANS</a></li>
+                                    <li><a href="menspage.html">PANTS</a></li>
                                 </ul>
                                 </div>
                                 <div class="flexSub">
@@ -300,8 +300,6 @@ function navbar(){
                     </ul>
                 </div>
             </li>
-
-            <li> <a href="#">BEAUTY</a>
 
             <li> <a href="beauty.html">BEAUTY</a>
 

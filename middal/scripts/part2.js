@@ -47,7 +47,7 @@ function display(data){
 }
 
 
-let real_cart=JSON.parse(localStorage.getItem("beautyRealcart_data"))||[];
+let real_cart=JSON.parse(localStorage.getItem("realcart_data"))||[];
 
 function add_c(){
 
@@ -67,7 +67,7 @@ function add_c(){
 
     });
 
-    localStorage.setItem("beautyRealcart_data",JSON.stringify(real_cart));
+    localStorage.setItem("realcart_data",JSON.stringify(real_cart));
 
   document.querySelector("#notify").innerText="Product Added successfully";
     

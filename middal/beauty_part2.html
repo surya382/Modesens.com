@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products</title>
    <link rel="stylesheet" href="./style/footer.css">
-
+    <link rel="stylesheet" href="./style/navbar.css">
    <link rel="stylesheet" href="./style/part2.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -15,7 +15,7 @@
 </style>
 </head>
 <body>
-   
+    <div id="navbar"></div>
 
     <div id="main_div">
 
@@ -105,6 +105,12 @@
 </script>
 
 <script type="module">
+
+
+import navbar from './scripts/navbar.js'
+    let navbar1 = document.getElementById("navbar")
+    navbar1.innerHTML=navbar()
+
 
     import footer from './scripts/footer.js';
 
