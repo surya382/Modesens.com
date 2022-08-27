@@ -12,7 +12,6 @@
     width:20%;
     justify-content: space-around;
     align-items: center;
-  
     margin-top: 0%;
 }
 /* .user img{
@@ -45,9 +44,9 @@
 #navbar ul>li {
     display: inline-block;
     margin: auto;
-
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
+    z-index: 1;
 }
 a{
     text-decoration: none;
@@ -76,28 +75,25 @@ a{
 }
 .menu ul li:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
     background-color: rgb(210, 194, 194);
 
 }
 .menu ul li:hover .sub-menu1 {
     display:block;
     position:absolute;
-    z-index: 1;
-
     margin-top: 0%;
+    background: white;
     /* padding: 1%; */
     
 }
 .menu ul li:hover .sub-menu1 ul {
     display: block;
     /* margin:5px; */
+    
 }
 .menu ul :hover .sub-menu1 ul li { 
     /* width:150px; */
     /* padding-top:3%; */
-
-    background-color: white;
 }
 .menu ul li:hover .sub-menu1 ul {
     display: block;
@@ -106,7 +102,6 @@ a{
 .menu ul li:hover .sub-menu1 ul li { 
     width:150px;
     padding-top:3%;
-
     border-bottom: 1px dotted grey;
     border-radius: 5px;
     text-align: center;
@@ -118,21 +113,21 @@ a{
 display: block;
 position: absolute;
 
-background: rgb(250, 245, 245);
+/* background: rgb(250, 245, 245); */
 margin-top: 0%;
 border-radius: 15px;
-
 }
 .hoverSub:hover .sub-menu2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: white;
+    z-index: 1;
 }
 .hoverSub:hover .sub-menu2>.flexSub>ul{
     display:grid;
 }
 .hoverSub:hover .sub-menu2>.flexSub{
-
    padding:1%;
 }
 /* #lister{
