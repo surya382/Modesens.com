@@ -35,7 +35,11 @@ function navbar(){
                                 </div>
                             </div>
                         </li>
+
                         <li class="hoverSub" ><a href="#">Bags</a>
+
+                        <li class="hoverSub" ><a href="">Bags</a>
+
                             <div class="sub-menu2">
                                 <div class="flexSub">
                                     <h5>Shop By Category</h5>
@@ -114,7 +118,11 @@ function navbar(){
                                 </div>
                             </div>
                         </li>
+
                         <li class="hoverSub"><a href="#">Beauty</a>
+
+                        <li class="hoverSub"><a href="beauty.html">Beauty</a>
+
                             <div class="sub-menu2">
                                 <div class="flexSub">
                                     <h5>Shop By Category</h5>
@@ -292,7 +300,11 @@ function navbar(){
                     </ul>
                 </div>
             </li>
+
             <li> <a href="#">BEAUTY</a>
+
+            <li> <a href="beauty.html">BEAUTY</a>
+
                 <div class="sub-menu1">
                     <ul>
                         <li><a href="#">Shop All</a></li>
@@ -343,22 +355,9 @@ function navbar(){
     </div>
     <div class="right_top">
         <a href="cart.html"><img id=""Mcart src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg" alt=""></a>
-        <div class="user hoverSub">
-            <img  src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt="">
-            <div class="sub-menu2">
-                <div class="flexSub" id="lister">
-                <ul id="list">
-                    <li><a href="login.html">SIGN UP</a></li>
-                   
-                </ul>
-                </div>
-           
-            </div>
-        </div>
-        
-        <img  src="https://img.icons8.com/ios-glyphs/452/search--v1.png" alt="">
-        <input type="text" name="" class="inpHover">
-        
+
+        <a href="login.html"><img id=""Mcart src="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt=""></a>
+        <input type="text" placeholder="Search" oninput="">
     </div>`
 }
 
