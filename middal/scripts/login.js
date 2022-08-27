@@ -2,6 +2,9 @@ var logins = document.getElementById("login");
 var registers = document.getElementById("register");
 var btn = document.getElementById("btn");
 var Login_Userid = document.getElementById("login-email").value;
+logins.addEventListener("onclick",function(){
+    event.preventDefault()
+})
 
 function register() {
     logins.style.left = "-400px";
@@ -16,6 +19,7 @@ function login() {
 }
 
 function signin() {
+    event.preventDefault()
     let Detail = JSON.parse(localStorage.getItem("data"));
 
     if (Detail.length === 0) {
@@ -52,10 +56,10 @@ function signin() {
 
 }
 let Detail = JSON.parse(localStorage.getItem("data")) || [];
-
+let users = JSON.parse(localStorage.getItem("users")) || {};
 
 function signup() {
-
+    event.preventDefault()
     let obj = {
 
         personname: document.getElementById("register-userid").value,
@@ -66,10 +70,18 @@ function signup() {
     }
 
     if (obj.personname != "" && obj.personemail != "" && obj.prpassword != "" && obj.prpassword.length >= "8" && (obj.prpassword.includes("@") || obj.prpassword.includes("#")) && obj.contact.length == "10") {
-
-        alert("Successfully signed up");
-        Detail.push(obj);
-        localStorage.setItem("data", JSON.stringify(Detail));
+        if(users[obj.personname]==undefined && users[obj.prpassword]==undefined && users[obj.personemail]==undefined){
+            users[obj.personname]=1;
+            users[obj.prpassword]=1;
+            users[obj.personemail]=1;
+            alert("Successfully signed up");
+            Detail.push(obj);
+            localStorage.setItem("data", JSON.stringify(Detail));
+            localStorage.setItem("users",JSON.stringify(users))
+        }else{
+            alert("User already registered")
+        }
+        
         // window.location.href = "log.html";
     }
     else if (obj.personname == "" || obj.personemail == "" || obj.prpassword == "" || obj.contact == "" || obj.age == "") {

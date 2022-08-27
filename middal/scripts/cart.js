@@ -98,8 +98,7 @@ function removeData(elem,index){
 
 function cartData(){
     
-    let item_price=document.querySelector(".total_item_price")
-    item_price.innerText=`Rs ${total}`;
+    
     if(total>499){
         del=0
     }
@@ -121,6 +120,8 @@ function cartData(){
     }else{
         console.log(applied)
     }
+    let item_price=document.querySelector(".total_item_price")
+    item_price.innerText=`Rs ${(total)}`;
   
     localStorage.setItem("total",eval(total+(total*18/100)+del+(discount || 0)))
 
@@ -142,6 +143,7 @@ if(couponValue==coupon){
     document.querySelector(".coupon_val").disabled=true;
     couponDisplay.innerText="You Have Applied Coupon Successfully"
     couponDisplay.style.color="green"
+    localStorage.setItem("total",eval(total+(total*18/100)+del+(discount || 0)))
     cartData()
 }else{
     couponDisplay.innerText="Invalid Coupon Code"
