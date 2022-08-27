@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./style/Home.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <script src="https://kit.fontawesome.com/19c875d921.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div>
+        <div id="top-portion">
+            <img id="image"
+                src="https://modesens.com/banner/11843/getimg/?img=%2Fbanner%2F20220803-modesens-Sale-1140x400-EN.jpg"
+                alt="error">
+            <button id="left"><</button>
+            <button id="right">></button>
+        </div>
+        <div id="text">
+            <h2>Featured Partners</h2>
+            <h3>Compare across our 500+ partner stores to find the products you want at the best price.</h3>
+        </div>
+        <div id="slide">
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-SSENSE-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-NET-A-PORTER-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-FARFETCH-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-NORDSTROM-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-MATCHESFASHION-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-SAKS-FIFTH-AVENUE-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-MYTHERESA-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-SHOPBOP-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-ITALIST-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-CETTIRE-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-LUISAVIAROMA-logo.png" alt="error">
+            </div>
+            <div>
+                <img src="https://cdn.modesens.com/banner/20220708-BROWNSFASHION-logo.png" alt="error">
+            </div>
+        </div>
+        <div id="line">
+            <div id="b">
+                <div id="b1"></div>
+                <h2>Special Offers</h2>
+                <div id="b2"></div>
+            </div>
+
+        </div>
+        <div id="big">
+        </div>
+        <button id="btn1">VIEW MORE</button>
+        <div id="b">
+            <div id="b1"></div>
+            <h2>Trending Now</h2>
+            <div id="b2"></div>
+        </div>
+
+        <div id="box">
+        </div>
+        <button id="btn2">SHOW MORE</button>
+        <div id="b">
+            <div id="b1"></div>
+            <h2>Community Posts</h2>
+            <div id="b2"></div>
+        </div>
+        <div id="last"> </div>
+        <button id="btn5">VIEW ALL</button>
+        <div id="bott">
+            <div id="inside">
+                <h2>Download the</h2>
+                <h2>ModeSens App</h2><br>
+                <p>A seamless experience that takes your style
+                    to the next level.</p>
+                <button>DOWNLOAD NOW</button>
+                <img src="https://cdn.modesens.com/static/img/20220707appdownload_en.png">
+            </div>
+            <div id="inside1">
+                <h2>Install the ModeSens</h2><br>
+                <h2>Browser Extension</h2><br>
+                <p>Get timely, accurate product information
+                    every time you browse.</p>
+                <button>INSTALL NOW</button>
+                <img src="https://cdn.modesens.com/static/img/20211109downloadright.png">
+            </div>
+        </div>
+        <p id="para">When you follow our links to visit a brand or retailer's website or make a purchase, ModeSens may earn a commission.</p>
+        <div id="footer"></div>
+</body>
+
+</html>
+
+<script type="module">
+    import navbar from "./scripts/navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+
+
+    import footers from './scripts/footer.js';
+    document.getElementById('footer').innerHTML = footers;
+
+    // console.log(footers)
+</script>
+<script src="./scripts/index.js"></script>
