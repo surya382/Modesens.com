@@ -1,10 +1,13 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-#main_div{display: flex;
+#main_div{
+display: flex;
 gap: 20px;
 width: 80%;
-margin: auto;}
+margin: auto;
+margin-top: 2%;
+}
 
 #image{
 width: 450px;

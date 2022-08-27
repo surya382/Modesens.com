@@ -13,6 +13,9 @@ slant_right.setAttribute("class","slant_right")
 let str="Order Successful."
 let i=0,str1="";
 let all=[circle,slant_left,slant_right],allCount=0;
+
+
+
 let circle_anim=setInterval(function(){
     if(allCount==all.length-1){
         circle.style.borderColor="black"
@@ -97,19 +100,7 @@ function nextAnim(){
     Container.append(msg)
     
 }
-
-
-
-
-
-
-
-
-
-
 order_successful.append(h1)
-
-
 
 Container.append(div)
 

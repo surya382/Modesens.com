@@ -54,14 +54,14 @@ function add_c(){
     
 
        let  quantity=document.querySelector("#qty").value;
-       let size=document.querySelector("#size").value;
-       let color=document.querySelector("#color").value;
+    //    let size=document.querySelector("#size").value;
+    //    let color=document.querySelector("#color").value;
 
     data.forEach(function(el){
 
         el.quantity=quantity;
-        el.size=size;
-        el.color=color;
+        // el.size=size;
+        // el.color=color;
 
         real_cart.push(el);
 
@@ -83,14 +83,14 @@ document.querySelector("#notify").innerText="";
 function now(){
 
     let  quantity=document.querySelector("#qty").value;
-    let size=document.querySelector("#size").value;
-    let color=document.querySelector("#color").value;
+    // let size=document.querySelector("#size").value;
+    // let color=document.querySelector("#color").value;
 
     data.forEach(function(el){
 
         el.quantity=quantity;
-        el.size=size;
-        el.color=color;
+        // el.size=size;
+        // el.color=color;
 
     });
 

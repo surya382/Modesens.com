@@ -1,5 +1,5 @@
 
-let ArrData=JSON.parse(localStorage.getItem("cart_data"));
+let ArrData=JSON.parse(localStorage.getItem("realcart_data"));
 let couponDisplay=document.querySelector(".couponDisplay")
 let coupon="TEAMJS201"
 let applied=localStorage.getItem("applied") || "no"
@@ -40,6 +40,9 @@ function DisplayTab(data){
         let warnQty=document.createElement("p")
         warnQty.setAttribute("class","warnQty")
         let quantityDiv=document.createElement("div")
+        quantityDiv.setAttribute("class","qty_btn")
+        let textQty=document.createElement("p")
+        textQty.innerText="Quantity : "
         let leftQty=document.createElement("button")
         leftQty.innerText="-"
         leftQty.addEventListener("click",function(){
@@ -78,7 +81,7 @@ function DisplayTab(data){
             removeData(el,index)
         })
         total=total+el.quantity*el.price;
-        quantityDiv.append(leftQty,qty,rightQty)
+        quantityDiv.append(textQty,leftQty,qty,rightQty)
         div.append(image,type,quantityDiv,warnQty,price,rem)
         divMain.append(div)
     })
@@ -95,8 +98,7 @@ function removeData(elem,index){
 
 function cartData(){
     
-    let item_price=document.querySelector(".total_item_price")
-    item_price.innerText=`Rs ${total}`;
+    
     if(total>499){
         del=0
     }
@@ -108,16 +110,18 @@ function cartData(){
     total_payable.innerText=`Rs. ${Math.round(eval(total+(total*18/100)+del+(discount || 0)))}`
     let total_price=document.querySelector(".total_cart_price")
     total_price.innerText=`Rs ${Math.round(eval(total+(total*18/100)+del+(discount || 0)))}`;
-    let discountH=document.querySelector(".discount_head")
-    if(discount==1000 && applied=="no"){;
-        discountH.innerText=`Discount : Rs. - ${discount}`
-        total=total-discount;
-        total_price.innerText=`Rs ${total}`;
+    if(discount==1000 && applied=="no"){
+        let discountH=document.querySelector(".discount_head")
+        document.querySelector(".disCH").innerText="Discount :"
+        discountH.innerText="- Rs.1000"
+        total_price.innerText=`Rs ${Math.round(eval(total+(total*18/100)+del+(discount || 0)))}`;
         discount=0;
         localStorage.setItem("applied","yes")
     }else{
         console.log(applied)
     }
+    let item_price=document.querySelector(".total_item_price")
+    item_price.innerText=`Rs ${(total)}`;
   
     localStorage.setItem("total",eval(total+(total*18/100)+del+(discount || 0)))
 
@@ -135,9 +139,11 @@ function checkCoupon(){
 let couponValue=document.querySelector(".coupon_val").value;
 if(couponValue==coupon){
     discount=1000;
+    total=total-discount;
     document.querySelector(".coupon_val").disabled=true;
     couponDisplay.innerText="You Have Applied Coupon Successfully"
     couponDisplay.style.color="green"
+    localStorage.setItem("total",eval(total+(total*18/100)+del+(discount || 0)))
     cartData()
 }else{
     couponDisplay.innerText="Invalid Coupon Code"

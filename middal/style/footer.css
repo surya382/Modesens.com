@@ -2,7 +2,7 @@
 
 #footer{
 position: absolute;
-
+margin-top:3%;
 /* bottom: 0; */
 }
 
@@ -96,7 +96,7 @@ color: white;
 }
 
 
-}
+
 
 .inppp{
     margin-left: -0.01em;
