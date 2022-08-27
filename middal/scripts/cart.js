@@ -1,20 +1,11 @@
 
 let ArrData=JSON.parse(localStorage.getItem("cart_data"));
-for(let i=0;i<10;i++){
-    ArrData.push(ArrData[0])
-}
 let couponDisplay=document.querySelector(".couponDisplay")
-ArrData.forEach(function(el){
-    el["quantity"]=1;
-})
 let coupon="TEAMJS201"
 let applied=localStorage.getItem("applied") || "no"
-console.log(applied)
 let total,
 discount,
 del=80;
-console.log(ArrData)
-
 // let ArrData=JSON.parse(localStorage.getItem("cart"));
 
 // getData()
@@ -102,7 +93,6 @@ function removeData(elem,index){
 }
 
 
-
 function cartData(){
     
     let item_price=document.querySelector(".total_item_price")
@@ -135,6 +125,7 @@ function cartData(){
 checkApplied()
 function checkApplied(){
     if(applied=="yes"){
+        document.querySelector(".coupon_val").disabled=true;
         couponDisplay.innerText="You Have Already Applied Coupon Successfully"
         couponDisplay.style.color="green"
     }
@@ -144,6 +135,7 @@ function checkCoupon(){
 let couponValue=document.querySelector(".coupon_val").value;
 if(couponValue==coupon){
     discount=1000;
+    document.querySelector(".coupon_val").disabled=true;
     couponDisplay.innerText="You Have Applied Coupon Successfully"
     couponDisplay.style.color="green"
     cartData()

@@ -13,6 +13,9 @@ redirecter.append(head,head2,head3,process)
 
 setTimeout(function(){
     redirecter.innerHTML=null;
+    let hdFirst=document.createElement("h1")
+    hdFirst.innerText=`Payment Amount : ${localStorage.getItem("total")}`
+    hdFirst.style.color="green"
     let hd1=document.createElement("h1")
     hd1.innerText="Payment Verifying through OTP."
     let hd2=document.createElement("p")
@@ -37,7 +40,7 @@ setTimeout(function(){
     })
     let timer=document.createElement("h3")
     timer.innerText="00:59";
-    redirecter.append(hd1,hd2,hd3,inp,attempt,btn,btn2,timer)
+    redirecter.append(hdFirst,hd1,hd2,hd3,inp,attempt,btn,btn2,timer)
 
     function checkOTP(inp,btn,attempt,timer){
         if(chance==1){
@@ -94,6 +97,8 @@ setTimeout(function(){
         redirecter.append(head,anchor)
     }
 },3000)
+
+
 
 function successfull(){
     window.location.href="order.html"

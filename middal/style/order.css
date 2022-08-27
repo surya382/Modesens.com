@@ -40,3 +40,19 @@ body{
     margin-left: 27.7%;
     transform: rotate(45deg);
 }
+.msg{
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 1%;
+    width: 90%;
+    height: 300px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUXZCisnY97-vIE3tjy3347Mqbx6u0nxTWA&usqp=CAU");
+    background-size: cover;
+}
+.white_text{
+    margin-top: 1%;
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 1%;
+}
