@@ -1,7 +1,6 @@
 #navbar{
     display: flex;
     justify-content: space-around;
-
     background: white;
     border-radius: 5px;
     position: sticky;
@@ -9,7 +8,7 @@
 }
 .right_top{
     display: flex;
-    width:20%;
+    width:10%;
     justify-content: space-around;
     align-items: center;
     margin-top: 0%;
@@ -47,6 +46,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     z-index: 1;
+    
 }
 a{
     text-decoration: none;
@@ -76,28 +76,22 @@ a{
 .menu ul li:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgb(210, 194, 194);
-
 }
 .menu ul li:hover .sub-menu1 {
     display:block;
     position:absolute;
     margin-top: 0%;
-    background: white;
-    /* padding: 1%; */
-    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .menu ul li:hover .sub-menu1 ul {
     display: block;
     /* margin:5px; */
-    
-}
-.menu ul :hover .sub-menu1 ul li { 
-    /* width:150px; */
-    /* padding-top:3%; */
 }
 .menu ul li:hover .sub-menu1 ul {
     display: block;
     margin:5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: white;
 }
 .menu ul li:hover .sub-menu1 ul li { 
     width:150px;

@@ -36,7 +36,7 @@ setTimeout(function(){
     btn2.innerText="Cancel Payment"
     btn2.setAttribute("id","cancel_otp")
     btn2.addEventListener("click",function(){
-        window.location.href="payment.html"
+        window.location.href="cart.html"
     })
     let timer=document.createElement("h3")
     timer.innerText="00:59";
