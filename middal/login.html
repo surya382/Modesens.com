@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <!-- <link rel="stylesheet" href="./login.css"> -->
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="hero">
+
+        <div id="text">
+            <!-- <h1>Welcome to the project presentation.</h1>
+            <h2>Today team <samp class="team">#_aflshdfa</samp> presenting a clone website of <br> Modesens.</h2> -->
+            <img src="https://media.istockphoto.com/photos/beautiful-girl-with-curly-hairstyle-picture-id1180484935?k=20&m=1180484935&s=612x612&w=0&h=v0qkM16rvxvOewYHmaFLIrmtkzV1p52ZjkOthPIW-4U=" alt="">
+        </div>
+
+
+        <div class="form-box">
+
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Sign In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="email" class="input-field" placeholder="Enter email" id="login-email">
+                <input type="number" class="input-field" placeholder="Enter phone" id="login-phone">
+                <input type="password" class="input-field" placeholder="Enter Password" id="login-passward">
+                <input type="checkbox" class="check-box"><span id="chickbox">Remember Password</span>
+                <button type="submit" class="submit-btn" onclick="signin()">Login</button>
+
+            </form>
+
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter UserId" id="register-userid">
+                <input type="email" class="input-field" placeholder="Enter Email" id="register-emailid">
+                <input type="number" class="input-field" placeholder="Enter phone" id="register-phone">
+                <p class="notes">Please enter valid number</p>
+                <input type="text" class="input-field" placeholder="Enter Age" id="register-age">
+                <input type="password" class="input-field" placeholder="Enter Password" id="register-passward">
+                <p class="notes">Please Include Special Characters (@ or #)</p>
+                <input type="checkbox" class="check-box"><span id="chickbox">I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn" onclick="signup()" id="signup_submit">Register</button>
+
+            </form>
+            <div class="icon">
+                <img src="https://modesens.com/static/img/login-icon/20210617google.svg" alt="">
+                <img src="https://modesens.com/static/img/login-icon/20210617facebook.svg" alt="">
+                <img src="https://modesens.com/static/img/login-icon/20210617apple.svg" alt="">
+                <img src="https://modesens.com/static/img/login-icon/20210617wechat.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="./scripts/login.js"></script>
+<!-- <script src="./login.js"></script> -->
+
+<script type="module">
+    import navbar from "./scripts/navbar.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+
+    // console.log(footers)
+</script>
