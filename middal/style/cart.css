@@ -8,25 +8,16 @@ justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     height:550px;
     position: sticky;
-    top:8vh;
+    top:10vh;
     border-radius: 10px;
     z-index: 1;
 }
 #CartContent{
-<<<<<<< HEAD
-    width:60%;
+    width:65%;
     margin:auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:5%;
-
-=======
-    width:68%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:1%;
->>>>>>> 97fd8c28d373e134117d8be33223bc540cb2479b
+    grid-template-columns: repeat(3,1fr);
+    gap:3%;
 }
 #CartContent>div{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -34,6 +25,7 @@ justify-content: space-between;
     padding: 3%;
     font-size: 14px;
     border-radius: 15px;
+    height: 73vh;
 }
 #CartContent>div>button{
     border: 0px;
@@ -45,10 +37,13 @@ justify-content: space-between;
     border-radius: 5px;
 }
 #CartContent>div *{
+    /* width:40vw */
     margin-left: 2%;
+   
 }
 #CartContent>div>img{
-    width: 100%;
+    width:20vw;
+    height: 40vh;
     /* height:250px; */
 }
 .qty_btn{
@@ -73,7 +68,7 @@ justify-content: space-between;
 }
 #cart *{
     margin-left: 8%;
-    margin-top: 1%;
+    margin-top: 6%;
     font-size: 14px;
 }
 #cart span,.discount_head{
