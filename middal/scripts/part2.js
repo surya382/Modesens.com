@@ -27,13 +27,13 @@ function display(data){
 
         let pic=document.createElement("img");
         pic.setAttribute("src",el.image);
-<<<<<<< HEAD
+
         pic.style.width="30vw"
         pic.style.height="50vh"
-=======
-        pic.style.width="80%"
-        pic.style.height="80%"
->>>>>>> 97fd8c28d373e134117d8be33223bc540cb2479b
+
+        // pic.style.width="80%"
+        // pic.style.height="80%"
+
 
         document.querySelector("#image").append(pic);
 

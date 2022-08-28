@@ -164,3 +164,26 @@ span {
     color: red;
     font-size: 0.7em;
 }
+@media all and (min-width:481px) and (max-width: 768px) {
+    #text>img{
+        width: 90%;
+        margin-left: 1em;
+    }
+.hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+  
+}
+
+@media all and (min-width:320px) and (max-width:480px) {
+    #text>img{
+        width: 60%;
+        margin-left: 1em;
+    }
+.hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+   
+} 
