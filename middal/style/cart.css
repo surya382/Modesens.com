@@ -12,11 +12,11 @@ height:200px;
     z-index: 1;
 }
 #CartContent{
-    width:70%;
+    width:60%;
     margin:auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:2%;
+    grid-template-columns: repeat(2,1fr);
+    gap:5%;
 
 }
 #CartContent>div{

@@ -37,9 +37,9 @@
 
 .form-box {
     width: 380px;
-    height: 80vh;
+    /* height: 80vh; */
     position: relative;
-    margin: 6% auto;
+    margin: 4% auto;
     /* margin-left: 40em; */
     background-color: transparent;
     padding: 5px;
@@ -79,7 +79,7 @@
 }
 
 .icon {
-    margin: 30em auto;
+    margin: 26.5em auto;
     text-align: center;
 }
 

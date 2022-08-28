@@ -163,8 +163,6 @@ appendDt = (dt) => {
         icon.setAttribute("id", "btn6")
         let x=0;
         icon.addEventListener("click", function () {
-            //console.log("good")
-            // Toggle2(index)   
             if(x==0){
                 icon.style.color = "red";
                 x++;
@@ -196,16 +194,7 @@ appendDt = (dt) => {
     })
 }
 
-function Toggle1(x) {
-    //console.log(x)
 
-    if (x==0) {
-        document.getElementById("btn4").style.color = "red";
-    }
-    else {
-        document.getElementById("btn4").style.color = "red";
-    }
-}
 
 async function getlast() {
 
@@ -233,9 +222,17 @@ appendLast = (data) => {
         let icon = document.createElement("button");
         icon.setAttribute("class", "fa-solid fa-heart");
         icon.setAttribute("id", "btn4")
+        let x=0;
         icon.addEventListener("click", function () {
-            //console.log("good")
-            Toggle1(index)
+           
+            if(x==0){
+                icon.style.color = "red";
+                x++;
+            }else{
+                icon.style.color = "grey";
+                x=0;
+
+            }   
         })
 
         let img = document.createElement("img");
@@ -249,15 +246,6 @@ appendLast = (data) => {
 }
 
 
-// function Toggle2(x) {
-    
-//     if (x==0) {
-//         document.getElementById("btn6").style.color = "red";
-//     } else {
-//         document.getElementById("btn6").style.color = "red";
-    
-//     }
-// }
 
 document.getElementById("btn1").addEventListener("click",function(){
     window.location.href="mens.html";
@@ -271,6 +259,7 @@ document.getElementById("btn2").addEventListener("click",function(){
 })
 
 
-// document.getElementById("btn10").addEventListener("click",function(){
-//     window.location.href="womens.html";
-// })
+document.getElementById("btn5").addEventListener("click",function(){
+    console.log("good")
+    window.location.href="beauty.html";
+})

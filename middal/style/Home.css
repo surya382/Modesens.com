@@ -93,28 +93,31 @@ h3 {
     height: 400px;
     position: relative;
 }
+
 #btn8 {
     position: absolute;
     opacity: 0;
-    top:58%;
-    left: 20%;
-    padding:15px 78px;
-    font-size: 28px;
+    top: 58%;
+    left: 16%;
+    padding: 15px 60px;
+    font-size: 21px;
     border: 1px solid;
 }
+
 #pic:hover {
     opacity: 0.9;
 }
+
 #btn8:hover {
-    background-color:white;
+    background-color: white;
     background: transparent;
     /* transition: .8s; */
-    opacity:1;
+    opacity: 1;
     color: #FFFFFF;
     /* color: red; */
     border: 1px solid black;
     font-weight: bold;
-   
+
 }
 
 #box {
@@ -136,29 +139,31 @@ h3 {
     height: 400px;
     position: relative;
 }
+
 #btn9 {
     position: absolute;
     opacity: 0;
-    top:55%;
-    left: 15%;
-    padding:12px 60px;
-    font-size:28px;
+    top: 54%;
+    left: 10%;
+    padding: 14px 50px;
+    font-size: 21px;
     border: 1px solid;
 }
 
 #pic1:hover {
     opacity: 0.9;
 }
+
 #btn9:hover {
-    background-color:white;
+    background-color: white;
     background: transparent;
     /* transition: .8s; */
-    opacity:1;
+    opacity: 1;
     color: #FFFFFF;
     /* color: red; */
     border: 1px solid black;
     font-weight: bold;
-   
+
 }
 
 #btn {
@@ -265,7 +270,8 @@ h4 {
     font-size: 25px;
     z-index: 1;
 }
-#btn10{
+
+#btn10 {
     display: block;
     margin: auto;
     margin-top: 40px;
@@ -276,6 +282,7 @@ h4 {
     font-weight: bold;
     cursor: pointer;
 }
+
 #btn5 {
     display: block;
     margin: auto;
@@ -288,7 +295,8 @@ h4 {
     cursor: pointer;
 }
 
-#btn5:hover,#btn10:hover {
+#btn5:hover,
+#btn10:hover {
     background-color: black;
     transition: .5s;
     color: white;
@@ -361,7 +369,7 @@ p {
     font-size: 20px;
 }
 
-#post{
+#post {
     width: 80vw;
     margin: 30px auto;
     display: grid;
@@ -370,7 +378,7 @@ p {
 }
 
 #post>img {
-    width: 350px;
+    width: 250px;
     height: 45vh;
 }
 
