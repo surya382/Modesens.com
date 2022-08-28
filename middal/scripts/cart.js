@@ -53,7 +53,7 @@ function DisplayTab(data){
                 qty.innerText=el.quantity;
                 price.innerText="Rs. "+Number(el.price)*Number(el.quantity);
                 total=Number(total)-Number(el.price);
-                localStorage.setItem("cart_data",JSON.stringify(ArrData))
+                localStorage.setItem("realcart_data",JSON.stringify(ArrData))
                 cartData()
             }
         })
@@ -66,7 +66,7 @@ function DisplayTab(data){
            warnQty.innerText=""
            total=Number(total)+Number(el.price);
            ArrData=ArrData
-           localStorage.setItem("cart_data",JSON.stringify(ArrData))
+           localStorage.setItem("realcart_data",JSON.stringify(ArrData))
            console.log(total)
            cartData()
         })
@@ -91,7 +91,7 @@ function DisplayTab(data){
 function removeData(elem,index){
     total=total-(Number(elem.quantity)*Number(elem.price))
     ArrData.splice(index,1)
-    localStorage.setItem("cart_data",JSON.stringify(ArrData))
+    localStorage.setItem("realcart_data",JSON.stringify(ArrData))
     DisplayTab(ArrData)
 }
 
@@ -150,6 +150,15 @@ if(couponValue==coupon){
     couponDisplay.style.color="red"
 }
 }
+
+function checkCart(){
+    if(total==0 || total==undefined || total==null){
+        document.querySelector("#no_cart").innerText="There are no items in Cart!.."
+    }else{
+        window.location.href="checkout.html"
+    }    
+}
+
 
 // // DisplayTab(ArrData)
 // function DisplayTab(data){

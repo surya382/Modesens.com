@@ -1,6 +1,7 @@
 #CartContainer{
 display: flex;
 height:200px;
+justify-content: space-between;
 }
 #cart{
     width:30%;
@@ -12,47 +13,58 @@ height:200px;
     z-index: 1;
 }
 #CartContent{
+<<<<<<< HEAD
     width:60%;
     margin:auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:5%;
 
+=======
+    width:68%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1%;
+>>>>>>> 97fd8c28d373e134117d8be33223bc540cb2479b
 }
 #CartContent>div{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin:auto;
     padding: 3%;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 15px;
 }
 #CartContent>div>button{
     border: 0px;
-    padding: 2%;
+    padding: 1.5%;
     background-color: red;
     color:white;
     font-weight: bold;
-    margin-bottom: 1.5%;
+    margin-bottom: 2.5%;
     border-radius: 5px;
 }
 #CartContent>div *{
     margin-left: 2%;
 }
 #CartContent>div>img{
-    width: 350px;
-    height:450px;
+    width: 100%;
+    /* height:250px; */
 }
 .qty_btn{
     display:flex;
-    width:50%;
+    width:80%;
     justify-content: space-around;
     align-items: center;
-    font-size: 18px;
+    font-size: 14px;
 }
 .qty_btn>button{
-    width:30px;
-    height:40px;
+    width:20px;
+    height:30px;
     font-size: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 .warnQty{
     color:red;
@@ -60,8 +72,9 @@ height:200px;
     width:80%;
 }
 #cart *{
-    margin-left: 10%;
+    margin-left: 8%;
     margin-top: 1%;
+    font-size: 14px;
 }
 #cart span,.discount_head{
     position:absolute;
@@ -83,10 +96,15 @@ margin-left: 40%;
     font-size: 23px;
     font-family: sans-serif;
     font-weight: bold;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 #cart_btn:hover{
     border:1px solid black;
     background-color: black;
     color:white;
+}
+#no_cart{
+    color: red;
+    text-align: center;
+    margin-top: 1%;
 }

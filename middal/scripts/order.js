@@ -92,7 +92,7 @@ function nextAnim(){
    }
    function homePAGE(){
     setTimeout(function(){
-        window.location.href="index.html"
+        // window.location.href="index.html"
     },1000)
    }
     // let head2=document.createElement("h2")
