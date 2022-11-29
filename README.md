@@ -1,6 +1,5 @@
 # Modesens.com clone
- This is e-commerce website used for buying and supplying cloths and beauty product across the world.This was a team project where I with
- my teammates had created.My task was to do Login and Signup functionality with men and women product page and help in the css part.
+ This is e-commerce website used for buying and supplying cloths and beauty product across the world.
 
 
   ## Tech Stacks 🛠
