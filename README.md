@@ -1,5 +1,5 @@
 # Modesens.com clone
- This is e-commerce website used for buying and supplying cloths and beauty product across the world.
+ This is e-commerce website used for buying and supplying cloths and beauty product across the world. Modesens is one of the largest e-commerce stores. Modesens is provide the affordable price product with different category like clothes , beauty , women and men product.
 
 
   ## Tech Stacks 🛠
