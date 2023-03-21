@@ -21,4 +21,4 @@
 
 
   # Deployed Link :-
-     [https://dainty-begonia-81897f.netlify.app/]
+   - https://dainty-begonia-81897f.netlify.app/
