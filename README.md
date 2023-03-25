@@ -1,10 +1,12 @@
 # Modesens.com clone
- This is e-commerce website used for buying and supplying cloths and beauty product across the world. Modesens is one of the largest e-commerce stores. Modesens is provide the affordable price product with different category like clothes , beauty , women and men product.
+ This is a complete e-commerce website used for buying and supplying cloths and beauty product across the world. Modesens is one of the largest e-commerce stores. Modesens is provide the affordable price product with different category like clothes , beauty , women and men product.
 
 
   ## Tech Stacks 🛠
     
    JavaScript | HTML | CSS |
+   
+   
     
   ## Team Members :-
   - Vinayak hiwse
@@ -12,7 +14,7 @@
   - Rahul suraywanshi
   - vishal tandale
  
- 
+
   
   ## Clone Snaps :-
  ![modesens](https://user-images.githubusercontent.com/107462150/199269198-8f3bdb51-b324-42b9-a0c5-fe908a61bdff.png)
